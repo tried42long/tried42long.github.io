@@ -1,0 +1,2823 @@
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++                    CSS BASICS DO NOT UPDATE OR CHANGE THIS                          +
++     IF YOU WANT TO OVER RIDE THESE STYLES PLEASE USE THE OVERRIDE FILE TO MAKE IT   +
++     UPDATES TO THESE STYLES WILL BE COPIED OVER THE ENTIRE SECTION                  +
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+/*-------------------------------------------------------------
+PLEASE NOTE: 
+
+        !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                    IMPORTANT MESSAGE 
+        ALL CLASSES FOR FORMS MUST START WITH .form AS 
+        THE PAGE CREATION PROCESS WILL IDENTIFY IT AS A 
+        FORM SECTION AND ENTER form_default WHEN NO FORM 
+        CLASS IS IDENTIFIED BY THE CONTENT CREATOR        
+        !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+---------------------------------------------------------------*/
+
+/*-----------------------------------------
+    ELEMENTS
+*/
+
+
+
+
+/*--------------------------------------------
+    SETUP CLASSES
+*/
+
+#divWorkspaceDetails
+{
+    position:absolute;
+    top:10px;
+    left:10px;
+    height:100px;
+    width:200px;
+    z-index:50000000000;
+    border:solid 2px #f00;
+    background-color:#fff;
+    color:#222;
+    display:none;
+    height:0px;
+    width:0px;
+}
+
+#form_info
+{
+    display:block;
+   
+}
+
+#div_options,
+#edt_div_options
+{
+    float:left;
+    clear:both;
+    width:96%;
+    margin:0px;
+    margin-top:8px;
+    margin-left:1%;
+    padding:1%;
+    padding-top:10px;
+    padding-bottom:10px;
+    color:#222;
+    background-color:#fff;
+    border-top:solid 2px #0057ab;
+    border-bottom:solid 2px #0057ab;
+    max-height:300px;
+    overflow-y:auto;    
+}
+
+#div_options_button,
+#edt_div_options_button
+{
+    text-align:right;
+    float:left;
+    clear:both;    
+}
+
+#div_options div,
+#edt_div_options div
+{
+    float:left;
+    clear:both;
+    padding:1%;
+    border:solid 1px #cdcdcd;
+    border-bottom:solid 2px #aaa;
+    margin-top:8px;
+    background-color:#fafafa;
+    width:98%;
+    border-radius:10px;
+}
+
+#div_options div label,
+#edt_div_options div label
+{
+    font-size:.9em;
+    margin:1px;
+    padding:1px;
+    float:left !important;
+    clear:none !important;
+    width:15%;
+}
+
+    #edt_div_options div label {
+        width:auto;
+    }
+
+#edt_div_options div label span
+{    width:200px;
+     font-size:.8em;
+}
+
+#div_options div:hover,
+#edt_div_options div:hover
+{
+    box-shadow:0px 0px 8px rgba(0,0,0,.2);
+}
+
+#div_options div label input[type='button'],
+#edt_div_options div label input[type='button']
+{ 
+    width:16px;
+    height:16px;
+    background-color:#fafafa;
+    color:#222;
+    margin:0px;
+    padding:0px;
+    border:0px;
+    box-shadow:none;
+}
+
+#div_options div label input[type='button'] img,
+#edt_div_options div label input[type='button'] img
+{
+    cursor:pointer;
+}
+
+#edt_div_options div label input[type='radio']
+{
+    height:12px;
+    width:12px;
+}
+
+#edt_div_options .build_value
+{
+   width:100px !important;
+   float:left;
+}
+
+#edt_div_options .build_text
+{
+   width:170px;
+   float:left;
+   margin-left:12px !important;
+}
+
+.form_options
+{
+    float:left;
+    padding:0px !important;
+    margin:0px !important;
+    width:100% !important;
+}
+
+
+
+.form_options li
+{
+    float:left;
+    width:48% !important;
+    padding:1% !important;
+    margin:0%;
+    text-align:center;
+}
+
+.form_options li:first-child
+{
+    width:98% !important;
+    padding:1% !important;
+    margin:0px !important;
+    font-size:.7em;
+    text-align:center;
+    border:0px;
+    background-color:#505050;
+    color:#f1f1f1;
+    border-bottom:solid 1px #111
+}
+    
+    
+.form_options input[type="button"]
+{
+    height:25px;
+    width:120px;
+    padding:5px;
+    margin:2px;
+    margin-left:10px;
+    white-space:normal;
+    font-size:.75em;
+    box-shadow:2px 2px 4px rgba(0,0,0,.3);   
+    background-color:#4c5155;
+    color:#f1f1f1; 
+    border:solid 1px #2d3236;
+}
+
+/* UI Fixes from the jquery stuff*/
+    #form_options h3.ui-state-active {
+        border: 1px solid #003eff !important;
+        background: #007fff !important;
+        font-weight: normal !important;
+        color: #ffffff !important;
+    }
+
+    h2.mce-content-body,
+    h1.mce-content-body
+     {
+  font-size: 200%;
+  padding: 0 25px 0 25px;
+  margin: 10px 0 10px 0;
+}
+
+
+.MyForm
+{
+    position:relative;
+}
+
+.MyForm p
+{
+    line-height:1.45em;
+}
+
+.FormsEditor_Container_closed
+{
+    position:relative;
+    z-index:9000;
+    width:0px;    
+    height:0px;
+    padding:0px;
+    margin:0px;
+    transition: all 1s;
+    border:solid 3px #888;
+}
+
+.mce-floatpanel
+{
+    z-index:70000 !important;
+}
+
+.FormsEditor_Container_open
+{
+    position:relative;
+    display:block;
+    width:1190px;
+    min-height:700px;
+    margin:auto;
+    padding:0px;
+    background-color:#fff;
+    transition: all 1s;
+    box-sizing:border-box;
+}
+
+.FormsEditor_viewbutton
+{
+    float:left; 
+    height:20px !important;
+    width:20px !important;
+    margin:3px !important;
+    padding:2px !important;
+    padding-top:0px !important;
+    border-radius:0px !important;
+}
+
+#FormsEditor_Menu{
+    position:absolute;
+    top:0px;
+    left:0px;
+    height:3px;
+    overflow:hidden;
+}
+
+.FormsEditor_Close
+{
+    position:absolute;
+    right:20px;
+    top:0px;
+    height:10px;
+    width:10px;
+    z-index:40000;
+    display:none;
+}
+
+.FormsEditor_Close input[type='button']
+{
+    padding:2px !important;
+    border-radius:2px !important;
+    height:20px !important;
+    width:20px !important;
+    font-size:.8em !important;
+}
+
+
+.FormsEditor_holder
+{
+    position:relative;
+    max-height:680px;
+    min-height:400px;
+    width:96%;
+    border:solid 1px #ccc;
+    margin:1%;
+    padding:1%;
+    overflow-y:scroll;
+}
+
+#form_builder
+{ 
+  float:left;
+  padding:0%;
+}
+
+#form_editor_preview
+{
+  float:left; 
+  clear:both;
+  width:100%;
+  box-sizing:border-box;
+  padding:10px;
+  margin:0px;
+  margin-bottom:10px;
+
+ }
+ 
+ #form_editor_preview fieldset legend,
+ #form_editor_preview .textblock_title
+ {
+     border:0px;
+     margin:0px;    
+     border-bottom:solid 1px #ccc;
+     padding-left:5px;
+     text-align:left;
+     position:relative;
+     float:left;
+     width:90%;
+     clear:none;
+ }
+
+.fieldset_collapse, .fieldset_expand {
+    background-position:left;
+    height:20px;
+    text-decoration:none;
+    float:left;
+    width:20px;
+}
+
+.fieldset_expand {
+    background-image:url('../images/icons/accordion_arrow_open.png');
+}
+
+.fieldset_collapse {
+    background-image:url('../images/icons/accordion_arrow_closed.png');
+}
+ 
+ .form_options
+ {
+     width:100%;
+     list-style-type:none;
+ }
+ 
+ .form_options li
+ {
+     width:33%;     
+ }
+   
+ .form_menubar
+ {
+      border-bottom:solid 1px #ccc;
+      margin:0px;
+      padding:0px;
+      width:100%;
+ }
+  
+ .form_menubar li
+ {
+      display:block;
+      width:100%;
+      padding:0;
+      margin:0;
+      list-style-type:none;
+      font-size:.9em;
+      background:none;
+ }
+
+ .form_menubar li input[type='button']
+ {
+     width:100%;
+     border:0px;
+     border-radius:0px;
+ }
+ 
+  .form_menubar li input[type='button']:hover
+ {
+     box-shadow:2px 2px 4px rgba(0,0,0,.5);
+ }
+  
+  .form_menubar li.active
+  {
+    color:#222 !important;
+    border-bottom:0px;
+    
+  }
+  
+#form_premadeforms, #form_screens, #form_submitoptions, #form_standardbuild, #form_custombuild
+{
+    float:left;
+}
+
+#Standard_Parts1 
+{
+    list-style-type:none;
+    margin:0px;
+    padding:3px;
+    position:relative;
+
+}
+
+#Standard_Parts1 li
+{
+    float:left;
+    width:45%;
+    height:30px;
+    padding:1%;
+    margin:5px;
+    margin-right:1%;
+    font-size:.8em;
+    box-sizing:border-box;
+    
+
+}
+
+.ui-accordion .ui-accordion-content
+{
+    padding:5px !important;
+    font-size:.9em;
+}
+
+.ReadyField
+{
+    width:112px; 
+    height:20px;
+    float:left;
+    padding:5px; 
+    margin:5px;
+    z-index:8000;
+    border:solid 1px #dddddd;
+    color:#333;
+    background-color:#fafafa;
+    text-align:center;
+    font-size:.9em;
+    cursor:pointer;
+}
+
+.ReadyField:hover {
+     background-color:#79c9ec;
+     color:#222;
+}
+
+.ReadyField:active {
+     background-color:#fffa90;
+}
+
+.Placeholder
+{
+   float:left;
+   clear:both;
+    width:96%;
+    margin:1%;
+    margin:auto;
+    padding:2%;
+    background-color:#fff;
+    color:#444;
+    border:dashed 3px #aaa;
+    text-align:center;
+}
+
+.Placeholder_active
+{
+    width:90%;
+    margin:1%;
+    margin:auto;
+    padding:2%;
+    background-color:#fff;
+    color:#22517B;
+    border:dashed 3px #22517B;
+    text-align:center;
+}
+
+.Placeholder_active_hover
+{
+    background-color:#000;
+    color:#fff;
+}
+
+.DropItHere
+{
+    background-color:#22517B;
+    color:#fff;
+    border:dashed 3px #1D508A;
+    
+}
+
+.elementbucket
+{
+    width:100%;
+}
+
+.elementbucket li, .optionsbucket li
+{
+    width:100%;
+    margin:0px;
+    padding:0px;
+    padding-top:2px;
+    padding-bottom:5px;
+    float:left;
+  /* clear:both;*/
+    list-style-type:none;
+}
+
+    .elementbucket li span:hover, .optionsbucket li div:hover {
+        cursor:move;
+    }
+
+.preview_element
+{
+    width:96%;
+    position:relative;
+    padding:1%;
+    margin:1%;
+    min-height:45px;
+    border:dashed 2px transparent;    
+    box-sizing:border-box;
+}
+
+.preview_element:hover
+{
+    border:dashed 2px #aaa;
+    background-color:#C3DCF6;
+    
+}
+
+.preview_element_highlight_space
+{
+    border:dotted 1px #ccc;
+    border:solid 1px #8f8455 !important;
+    background-color:#ff982a !important;
+    color:#fff;
+    min-height:30px;   
+    height:1.5em;
+    
+}
+
+.portlet-header {
+    padding: 0.2em 0.3em;
+    margin-bottom: 0.5em;
+    position: relative;
+  }
+
+.preview_element_choices
+{
+    position:absolute;
+    z-index:100;
+    right:2px;
+    top:4px;
+    padding:5px;
+    border:solid 1px #fff;
+    background-color:#C3DCF6;
+    color:#aaa;
+    box-shadow:2px 2px 4px rgba(0,0,0,.3);
+}
+
+.preview_element_choices img:hover
+{
+    cursor:pointer;
+}
+
+.edit_element_on_form_hide
+{
+    display:none;
+}
+
+.edit_element_on_form_show
+{
+    display:block;
+}
+
+#FormsEditor_EditElement
+{
+    min-width: 450px;
+    max-width:900px;
+    height:650px;
+    padding:10px;
+    margin:0px;
+    border:solid 1px #ccc;
+    border-left:0px;
+    background-color:#f7f7f7;
+    color:#222;
+    box-shadow:2px 2px 6px rgba(0,0,0,.4);
+    z-index:50000;
+    border-top-right-radius:30px;
+    border-bottom-right-radius:30px;    
+    transition: all 1s;
+}
+
+.FormsEditor_EditElement_closed
+{
+    opacity:0;
+    position:absolute;
+    top:0px;
+    left:-1200px;    
+    transition: all 1s;
+    background-color:#fffa90 !important;
+}
+
+.FormsEditor_EditElement_open
+{
+    display:block;
+    opacity:1;    
+    position:absolute;
+    top:0px;
+    left:0px;        
+    transition: all 1s;
+}
+
+#edt_fieldset {
+    float:left;
+    width:400px;
+    box-sizing:border-box;
+}
+
+#edt_fieldset fieldset,
+#edt_fieldset section
+{
+    margin:1px;
+    padding:2px;
+}
+
+#edt_fieldset p
+{
+    clear:left;
+    float:left;
+    width:auto;
+    height:auto;
+    padding:0px;
+    margin:0px;
+    margin-bottom:5px;
+}
+
+#edt_fieldset label
+{  
+    float:left;
+    width:100%;
+}
+
+#edt_fieldset fieldset span
+{
+    float:left;
+    clear:none;
+    width:140px;
+    font-size:.8em;
+}
+
+#edt_fieldset select,
+#edt_fieldset input
+{
+    float: left;
+    width: 200px;
+    padding: 2px;
+    font-size: .80em;
+	font-family: 'open_sansregular', 'GothamBook', Verdana, Arial, sans-serif;
+    border-radius: 5px;
+    display:block;
+}
+
+#edt_fieldset input[type='range']
+{
+    width:150px;  
+    margin-right:10px;
+}
+
+#edt_fieldset select
+{
+    appearance:none;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    min-width:120px;
+}
+
+#divPreviewElementFldSet label {
+    width:auto;
+}
+
+#edt_fieldset select:required,
+#divPreviewElementFldSet select:required
+{
+    background-image: url(../images/icons/arrow_bullet_red.png);
+    background-position: right;
+    padding-right: 30px;
+    background-repeat: no-repeat;
+}
+
+#edt_fieldset input:required,
+#divPreviewElementFldSet input:required
+{
+    background-image: url(../images/icons/bullet_red.png);
+    background-position: right;
+    padding-right: 30px;
+    background-repeat: no-repeat;
+}
+
+#edit_sizelen, #edit_selectsizelen, #edit_rowslen, #edit_colslen
+{
+    width:30px !important;
+}
+
+#edt_pattern span.notice1
+{
+    width:280px !important;
+    margin-left:1%;
+}
+
+#divPreviewElementFldSet
+{
+    float:left;
+    margin:1px;
+    padding:1px;
+    background-color:#fff !important;
+    color:#000 !important;
+   width:450px;
+    border:solid 1px  #ccc;
+    margin-top:60px;    
+    min-height:150px;    
+    overflow:auto;
+    box-sizing:border-box;
+}
+
+#divPreviewElementFldSet fieldset,
+#divPreviewElementFldSet section
+{
+   border:0px;
+}
+
+#divPreviewElementFldSet fieldset legend
+{
+    font-style:italic;
+    font-size:.8em;
+}
+
+#divPreviewElementFldSet label
+{
+    clear:both;
+    float:left;
+}
+
+#divPreviewElementFldSet label span
+{
+    font-size:.85em;
+    float:left;
+    width:175px;
+}
+
+#divPreviewElementFldSet label aside, 
+#divPreviewElementFldSet label input,
+#divPreviewElementFldSet label select
+{
+    clear:both;
+    float:left;
+    font-size:.75em;
+    padding-bottom:4px;
+}
+
+#divPreviewElementFldSet label aside 
+{
+    float:right;
+    margin-top:4px;
+}
+
+#edt_ElementSaveButtons {
+   float:left;
+   width:400px;
+}
+
+#edt_ElementSaveButtons input[type='button']
+{
+    width:auto !important;
+}
+
+#edt_Count{
+    float:left;
+    width:430px;
+    margin:10px;
+}
+
+#div_SaveReciept {
+
+    display:block;
+    float:left;
+    width:415px;
+    padding:8px;
+    background-color:#fff;
+    color:#555;
+    margin:5px;
+    border:solid 1px #ccc;
+    box-sizing:border-box;
+}
+
+.editable
+{
+    border:dashed 2px transparent;
+}
+.editable:hover, .editable:active {
+
+    border:dashed 2px #e17000;
+    background-color:#fdfdfd;
+    color:#222;
+}
+
+
+/*-------------------------------------------------------------------------------
+FORM TOOLKIT
+-----------------------------------------------------------------------------*/
+.form_options h3:focus{
+    border:solid 3px #f00 !important;
+    background-color:pink !important;
+}
+
+#form_toolkit p, #form_toolkit h1, #form_toolkit h2, #form_toolkit h3,
+#form_toolkit legend, #form_toolkit span
+{
+    background-color:#232323;
+    color:#f1f1f1;
+    text-shadow:none !important;
+    box-shadow:none !important;
+}
+
+#form_toolkit fieldset,
+#form_toolkit section
+{
+    margin:0px;
+    padding:1%;
+    width:292px;
+}
+
+#form_toolkit fieldset legend
+{
+    font-size:.8em;
+	font-family: 'open_sansregular', 'GothamBook', Verdana, Arial, sans-serif;
+}
+
+#form_toolkit fieldset label span
+{
+    float:left;
+    width:80px;
+    font-size:.75em;
+	font-family: 'open_sansregular', 'GothamBook', Verdana, Arial, sans-serif;
+}
+
+#form_toolkit fieldset input[type='text'],
+#form_toolkit fieldset select
+{
+    float:left;
+    width:180px;
+    padding:2px;
+    font-size:.80em;
+	font-family: 'open_sansregular', 'GothamBook', Verdana, Arial, sans-serif;
+}
+
+#form_toolkit fieldset input[type='checkbox']
+{
+    margin-top:5px;
+}
+
+#form_toolkit fieldset .notice1
+{
+    font-size:.80em;
+	font-family: 'open_sansregular', 'GothamBook', Verdana, Arial, sans-serif;
+    background-color:#434343;
+    color:#fff;
+}
+
+#form_toolkit fieldset .notice1 a
+{ background-color:#434343;
+    color:#fff;font-size:.80em;
+    
+}
+
+#form_toolkit .build_value
+{
+    font-size:.80em;
+	font-family: 'open_sansregular', 'GothamBook', Verdana, Arial, sans-serif;
+    width:30px !important;
+}
+
+#form_toolkit .build_text
+{
+    font-size:.80em;
+	font-family: 'open_sansregular', 'GothamBook', Verdana, Arial, sans-serif;
+    width:130px !important;
+}
+
+.form_tools
+{
+    float:left; 
+    margin:0px !important; 
+    padding:0px !important; 
+    border:0px;
+    width:100%; 
+    margin-bottom:10px !important;
+}
+
+#form_confrimfieldset_delete
+{
+    height:150px;
+    width:450px;
+    padding:8px;
+    border-radius:8px;
+    border:solid 2px #b00909;
+    background-color:#efefef;
+    color:#222;
+    box-shadow:4px 4px 8px rgba(0,0,0,.5);
+}
+
+.form_confrimfieldset_delete_off{
+    left:-2000px;
+    position:absolute;
+    top:100px;
+    z-index:7000;    
+    transition:all 1s ease-in-out;
+}
+
+.form_confrimfieldset_delete_on
+{
+    left:500px;
+    position:absolute;
+    top:100px;
+    z-index:7000;    
+    transition:all 1s ease-in-out;
+}
+
+.FormEdit_RemoveFieldset a 
+{
+    float:right;
+    font-size:.7em;
+    z-index:15000;
+    cursor:pointer;
+    background-color:transparent !important;
+}
+
+section .FormEdit_RemoveFieldset a {
+    
+    top:20px;
+   
+}
+
+.FormEdit_RemoveFieldset img 
+{
+        max-height:none;
+        max-width:none;
+}
+
+/*--------------------------------------------------------------------------------
+    SPLASH SCREEN
+-----------------------------------------------------------------------------------*/
+.Splash_Options li{
+    list-style-type:none;
+    margin-bottom:5px;
+    border-bottom:solid 1px #aaa;
+    font-size:.8em;
+    padding:3px;
+}
+
+.Splash_Options li label{
+    margin-top:5px;
+    padding:3px;
+    padding-bottom:6px;
+}
+
+.Splash_Options li input[type='text'],
+.Splash_Options li input[type='email'] {
+   border:solid 1px #ccc;
+   background-color:#fcfcfc;
+   color:#343434;
+   width:95%;
+   margin:3px;
+   padding:4px;
+   font-size:.9em;
+}
+
+.Form_SplashScreen
+{
+   float:left;
+   top:0px;
+   left:0px;
+   height:100%;
+   width:100%;
+   margin:0px;
+   padding:3%;
+}
+
+/*-----------------------------------------------------------------------------
+    FORM FRAMEWORK
+---------------------------------------------------------------------------------*/
+.form_left_menu
+{
+    position:fixed;
+    top:100px;
+    width:340px !important;
+    background-color:#fafafa;
+    color:#222;
+    padding:4px !important;
+    border:solid 1px #ddd;
+    box-sizing:border-box;
+    overflow:auto;
+    border-radius:10px;
+    box-shadow:2px 2px 4px rgba(0,0,0,.4);
+}
+
+.form_preview_workspace {
+    float:left;
+    width:820px !important;
+    min-height:500px;
+    margin-left:350px;
+    margin-right:20px;
+    background-color:#f7f7f7;
+    color:#222;
+    padding:5px !important;
+    border:solid 1px #c0c0c0;    
+    box-sizing:border-box;
+    overflow:auto;
+}
+
+.form_left_menu .button_new {
+    width:45%;
+    float:left;
+    margin:1%;
+    padding:1%;
+    font-size:.9em;
+    text-align:center;
+    border:solid 1px #cacaca;
+    box-sizing:border-box;
+    background-color:#f6f6f6;
+    color:#2b2b2b;
+}
+
+.form_left_menu .button_new:hover{
+    border: 1px solid #003eff !important;
+    background: #007fff !important;
+    color:#fff !important;
+    cursor:pointer;
+}
+
+.form_left_menu .addElement_select
+{
+    float:left;
+    padding:1%;
+    font-size:.9em;
+    text-align:center;
+    border:solid 1px #c5c5c5;
+    box-sizing:border-box;
+    background-color:#f6f6f6;
+    color:#2b2b2b;
+    width:96%; 
+    display:block; 
+    margin-left:2%;
+}
+
+
+.form_left_menu .addElement_select option {
+    border-bottom: 1px solid #ccc !important;
+    background: #fafafa !important;
+    color:#232323 !important;
+    cursor:pointer;
+    padding-bottom:5px;
+}
+
+.form_left_menu .addElement_select option:hover {
+    border: 1px solid #003eff !important;
+    background: #007fff !important;
+    color:#fff !important;
+    cursor:pointer;
+}
+/*-----------------------------------------------------------------------------
+    SAVE BUTTON
+---------------------------------------------------------------------------------*/
+.SaveButton_off, .SaveButton_on{
+    border:solid 1px transparent;
+    border-radius:30px;
+    padding:8px;
+    padding-left:12px;
+    padding-right:12px;
+    background-color:transparent;
+    margin-top:5px !important;
+}
+.SaveButton_off {
+    
+}
+.SaveButton_on::before
+{
+    content:"When you finish, save -> ";
+
+}
+
+.SaveButton_on{
+    background-color:#FC6969;
+    border:solid 1px #cc0000;
+    color:#222 !important;
+    box-shadow:2px 2px 4px rgba(0,0,0,.3);
+    transition:1s;
+
+}
+
+    .SaveButton_on:hover {
+        background-color:#007fff;
+        border:solid 1px #003eff;
+        color:#fafafa !important;
+    }
+/*-----------------------------------------------------------------------------
+    FORM LAYOUT BLOCKS AND FIELDSET
+---------------------------------------------------------------------------------*/
+.block_content {
+    min-height:50px;
+    width:96%;
+   /* background-color:#fafafa;*/
+    color:#333;
+  /* float:left;    
+    clear:both;
+    position:relative;*/
+  margin:auto;
+}
+
+.block_content:hover,.block_content:active,
+#sortableLayout .ui-state-default:hover
+ {
+    background-color:#b9dcff !important;
+    color:#333;
+}
+#sortableLayout { list-style-type: none; margin: 0; padding: 0; width: 60%; }
+#sortableLayout li { margin: 0 5px 5px 5px; padding: 5px; font-size: 1.2em; line-height: 1.2em; }
+
+#sortableLayout li .ui-state-highlight { min-height: 30px !important; background-color:#fa0000 !important; line-height: 1.2em; float:left; }
+
+
+.block_content input[type="radio"], .block_textblock input[type="radio"]
+{
+    clear:both !important;
+
+}
+
+#divLayout_Element, #divLayout_ElementHolder {
+    float:left;
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    width:500px;
+    border:solid 1px #ddd;
+    background-color:#fafafa;
+}
+
+#divLayout_ElementHolder {
+   width:290px;
+   margin-left:10px;
+}
+
+#divLayout_ElementHolder h3{
+    text-align:center;
+    border-bottom:solid 4px #e17000;
+    width:100%;
+    float:left;
+    display:block;
+    margin:auto;
+}
+.Layout_ChooseElement 
+{
+    padding:0px;
+    margin:0px;
+    float:left;
+    width:100%;
+    box-sizing:border-box;
+}
+.Layout_ChooseElement li{
+    border-bottom:solid 1px #dfdfdf;
+    border-top:solid 1px #adadad;
+    padding:3px;
+    padding-bottom:5px;
+    margin:0px;
+    box-sizing:border-box;
+}
+.active_editElementLayout
+{
+    padding-top:8px !important;
+    padding-bottom:8px !important;
+}
+
+.active_editElementLayout  a
+{
+    background: #0050b1 !important;
+    color:#fff !important;
+    padding:3px;
+    margin-top:5px !important;
+    margin-bottom:5px !important;
+    border-radius:3px;
+    text-decoration:none;
+}
+
+.edt_CSS_Layout_Options_Elements {
+    float:right;
+    margin-right:4px;
+}
+
+.CSS_Options_Off {
+    height:0px;
+    width:0px;
+    overflow:hidden;
+   display:block;
+   
+}
+
+.CSS_Options_Sizer{
+    background-color:#fff;
+    color:#222;
+    border:solid 1px #555;
+    padding:3px;
+    position:relative;
+    float:left;
+    width:100%;
+    display:none;
+    box-shadow:2px 2px 4px rgba(0,0,0,.4);   
+}
+
+.CSS_Options_Sizer label
+{
+    font-size:.9em;
+    background-color:#555;
+    color:#fff;
+    padding:3px;
+    width:99%;
+    float:left;
+    box-sizing:border-box;
+    border:solid 1px #aaa;
+}
+
+.CSS_Options_Sizer select, .CSS_Options_Sizer option
+{
+    font-size:.85em;
+     padding:3px;
+    width:99%;
+    float:left;
+    box-sizing:border-box;
+    
+}
+
+/*-------------------------------------------------------------------------------
+FORM PREVIEW CORRECTIONS FROM THE EDITOR
+-----------------------------------------------------------------------------*/
+.form_preview fieldset legend:hover,
+.form_preview fieldset legend {
+    background-color:#555;
+    color:#f7f7f7;
+    font-size:1.2em;
+    font-weight:bold;
+    width:100%;
+    padding:10px;
+    box-sizing:border-box;
+    clear:both;
+    margin:0px;
+    margin-bottom:14px;  
+    text-align:left;
+    border: dashed 0px #E17000;
+}
+
+
+/*-------------------------------------------------------------------------------
+FORM DEFAULT
+-----------------------------------------------------------------------------*/
+
+.form_default
+{
+    margin:0px;
+    padding:0px;
+
+}
+
+.form_default form
+{
+    margin:0px;
+    padding:0px;
+}
+.form_default fieldset, .form_default section 
+{
+    position:relative;
+    border:0px;
+}
+
+.form_default fieldset + fieldset
+{
+    margin-top:15px;    
+}
+
+.form_default fieldset legend,
+.form_default .textblock_title
+{
+    background-color:#555;
+    color:#f7f7f7;
+    font-size:1.2em;
+    font-weight:bold;
+    width:100%;
+    padding:10px;
+    box-sizing:border-box;
+    clear:both;
+    margin:0px;
+    margin-bottom:14px;
+    /*margin-left:15px;*/
+}
+
+.form_default .textblock_title
+{
+    background-color:#f7f7f7;
+    color:#555;
+    font-size:1.2em;
+    font-weight:bold;
+    width:100%;
+    padding:2%;
+    box-sizing:border-box;
+    clear:both;
+    margin:0px;
+    margin-bottom:14px;
+    margin-left:15px;
+}
+
+.textblock_title {
+    float:none;
+}
+
+.form_default fieldset p
+{
+    clear:left;
+    float:left;
+    margin:0px;
+    padding:0px;
+    margin-bottom:5px;
+    width:auto;
+}
+
+.form_default fieldset label, .form_default fieldset .radioTitle,
+.form_default fieldset .checkboxTitle
+{
+    float:left;
+    width:200px;
+    font-weight:bold;
+    font-family:'gothambold1', serif;
+    font-size:.9em;
+}
+
+.form_default fieldset label span
+{
+    float:left;
+    width:200px;
+    font-weight:bold;
+	font-family: 'open_sansregular', 'GothamBook', Verdana, Arial, sans-serif;
+    font-size:.9em;
+}
+
+.form_default fieldset input,
+.form_default fieldset textarea,
+.form_default fieldset select
+{
+    float:left;
+    box-shadow:inset 0 1px 2px #DDD, 0 1px 0 #FFF;
+	-webkit-box-shadow:inset 0 1px 2px #DDD, 0 1px 0 #FFF;
+	-moz-box-shadow:inset 0 1px 2px #DDD, 0 1px 0 #FFF;
+	border:1px solid #CCC;
+	background-color:#FFF;
+	margin:0 0 3px;
+	padding:5px;
+	border-radius:5px;
+   
+}
+
+.form_default input:focus,
+.form_default select:focus
+{
+    border:solid 1px #66afe9;
+    box-shadow:0px 0px 8px #66afe9;
+}
+
+.form_default input:focus.readonly
+{
+    border:solid 1px #aaa;
+    box-shadow:0px 0px 8px #555;
+}
+
+.form_default select
+{
+    min-width:120px;
+}
+
+.form_default select:required
+{
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+}
+
+.form_default input[type='range']
+{
+    background:transparent;
+	margin:8px 3px;
+	padding:5px;
+	border:0px;
+	border-radius:0px;
+	 box-shadow:none;
+	-webkit-box-shadow:none;
+	-moz-box-shadow:none;
+	
+	
+}
+
+.form_default .readonly
+{
+   background-color:#f7f7f7 !important;
+   border:solid 1px #ccc;
+   color:#222;
+	font-family: 'open_sansregular', 'GothamBook', Verdana, Arial, sans-serif;
+   font-size:.95em;
+   margin-left:8px;
+}
+
+.form_default text em
+{
+    font-size:.75em;
+    color:#444;
+    letter-spacing:1px;
+}
+
+.form_default input[type=range] {
+  -webkit-appearance: none;
+  margin-top:8px;
+  box-sizing:border-box;
+  width:72%;  
+}
+
+.form_default input[type=range]:focus {
+  outline: none;
+}
+
+.form_default input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 1px;
+  cursor: pointer;
+  box-shadow: 0.3px 0.3px 0.9px #1d508a, 0px 0px 0.3px #215c9f;
+  background: #002b54;
+  border-radius: 20px;
+  border: 0.2px solid #002b54;
+}
+
+.form_default input[type=range]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px #222, 0px 0px 0px #0d0d0d;
+  border: 1px solid #222;
+  height: 15px;
+  width: 15px;
+  border-radius: 10px;
+  background: #1e5793;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -7.2px;
+}
+
+.form_default input[type=range]:focus::-webkit-slider-thumb 
+{
+    background-color:#fff;
+    box-shadow:0px 0px 8px #66afe9;
+    border: 1px solid #66afe9;
+}
+
+.form_default input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #002b54;
+}
+
+.form_default input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 1px;
+  cursor: pointer;
+  box-shadow: 0.3px 0.3px 0.9px #1d508a, 0px 0px 0.3px #215c9f;
+  background: #002b54;
+  border-radius: 20.5px;
+  border: 0.2px solid #002b54;
+}
+
+.form_default input[type=range]::-moz-range-thumb {
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  border: 1px solid #000000;
+  height: 15px;
+  width: 15px;
+  border-radius: 10px;
+  background: #1e5793;
+  cursor: pointer;
+}
+
+.form_default input[type=range]::-ms-track {
+  width: 100%;
+  height: 1px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+.form_default input[type=range]::-ms-fill-lower {
+  background: #002b54;
+  border: 0.2px solid #002b54;
+  border-radius: 41px;
+  box-shadow: 0.3px 0.3px 0.9px #1d508a, 0px 0px 0.3px #215c9f;
+}
+.form_default input[type=range]::-ms-fill-upper {
+  background: #002b54;
+  border: 0.2px solid #002b54;
+  border-radius: 41px;
+  box-shadow: 0.3px 0.3px 0.9px #1d508a, 0px 0px 0.3px #215c9f;
+}
+.form_default input[type=range]::-ms-thumb {
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  border: 1px solid #000000;
+  height: 15px;
+  width: 15px;
+  border-radius: 10px;
+  background: #1e5793;
+  cursor: pointer;
+  height: 1px;
+}
+
+.form_default input[type=range]:focus::-ms-fill-lower {
+  background: #002b54;
+}
+
+.form_default input[type=range]:focus::-ms-fill-upper {
+  background: #002b54;
+}
+
+.form_default .form_sliderval{
+  width:20%;
+  float:left;
+  clear:none;
+  font-size:.8em;
+  background:#f7f7f7;
+  color:#333;
+  border:0px;
+  margin-top:3px;
+  box-sizing:border-box;
+  border:0px;
+}
+
+
+.form_default input[type=radio],
+.form_default input[type=checkbox] {
+  float:left;
+  margin-top:8px;
+}
+
+.form_default p label input[type=radio]:first-child
+{
+    margin-top:70px;
+}
+
+
+.form_default input:required,
+.form_default textarea:required
+{
+    background-image:url(../images/icons/bullet_red.png);
+    background-position:right;
+    padding-right:20px;
+    background-repeat:no-repeat;    
+}
+
+.form_default input[type='checkbox']:required::after
+{
+   position:absolute;
+   left:135px;
+   content:"\2022";
+   font-size:1em;
+   padding:0px;
+   margin:0px;
+   color:#f00;
+   margin-right:30px;    
+}
+
+.form_default input[type='checkbox']:checked:required::after
+{
+   position:absolute;
+   left:135px;
+   content:"*";
+   color:#3a3;
+   margin-right:30px;    
+}
+
+.form_default select
+{
+    background-image:url(../images/icons/arrow_down.png);
+    background-position:right;
+    padding-right:30px;
+    background-repeat:no-repeat;
+}
+
+.form_default select:required
+{
+    background-image:url(../images/icons/arrow_bullet_red.png);
+    background-position:right;
+    padding-right:30px;
+    background-repeat:no-repeat;
+}
+
+.form_default aside
+{
+    float:left;
+    margin:0px;
+    padding:0px;
+    margin-top:10px;
+    margin-left:5px;
+    font-size:.85em;
+	font-family: 'open_sansregular', 'GothamBook', Verdana, Arial, sans-serif;
+    font-style:italic;
+    letter-spacing:1px;   
+}
+
+
+.form_default input[type='checkbox'],
+.form_default input[type='radio']
+{
+  position:absolute;
+  opacity:0;
+}
+
+.form_default fieldset ul {
+    margin:0px !important;
+    padding:0px;
+    list-style-type:none;
+}
+.form_default fieldset li {
+    float:left !important;
+    clear:both;
+    padding:0px;
+    padding-bottom:5px;
+    margin:0px;
+    box-sizing:border-box;
+    width:98%;
+    list-style-type:none !important;
+
+}
+.form_default input[type="checkbox"]:focus + label span,
+.form_default input[type="radio"]:focus + label span
+{
+    box-shadow: 0px 0px 2px 2px rgba(102,175,233, .8);
+}
+
+.form_default input[type="radio"]:focus + label span
+{
+    border-radius:15px;
+}
+
+.form_default input[type="checkbox"] + label span {
+    display:inline-block;
+    float:left;
+    width:19px;
+    height:19px;
+    margin:-2px 10px 0 0;
+    vertical-align:middle;
+    background:url(../images/icons/forms/form_bluetab.png) left top no-repeat;
+    cursor:pointer;
+}
+
+.form_default input[type="checkbox"]:checked + label span {
+    background:url(../images/icons/forms/form_bluetab.png) -19px top no-repeat;
+}
+
+.form_default input[type="checkbox"] + label {
+   /* color:#333;
+    background-color:#f7f7f7;*/
+    font-family:Arial, sans-serif;
+}
+
+.form_default input[type="radio"] + label {
+   /* color:#333;
+    background-color:#f7f7f7;*/
+    font-family:Arial, sans-serif;
+}
+
+.form_default input[type="radio"] + label span {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-2px 10px 0 0;
+    vertical-align:middle;
+    background:url(../images/icons/forms/form_bluetab.png) -38px top no-repeat;
+    cursor:pointer;
+}
+
+.form_default input[type="radio"]:checked + label span {
+    background:url(../images/icons/forms/form_bluetab.png) -57px top no-repeat;
+}
+
+.form_default input.lightBlue,
+.form_default textarea.lightBlue,
+.form_default select.lightBlue
+{
+    border:solid 1px #9DBED8;
+    background-color:#fff;
+    color:#222;
+}
+.form_default p.medBlue input,
+.form_default p.medBlue textarea,
+.form_default p.medBlue select
+{
+    border:solid 1px #0059a2;
+    background-color:#fff;
+    color:#222;
+}
+.form_default input.univBlue,
+.form_default textarea.univBlue,
+.form_default select.univBlue
+{
+    border:solid 1px #002B54;
+    background-color:#fff;
+    color:#222;
+}
+.form_default input.orange,
+.form_default textarea.orange,
+.form_default select.orange
+{
+    border:solid 1px #F58220;
+    background-color:#fff;
+    color:#222;
+}
+.form_default input.grey,
+.form_default textarea.grey,
+.form_default select.grey
+{
+    border:solid 1px #555;
+    background-color:#fff;
+    color:#222;
+}
+.form_default input.white,
+.form_default textarea.white,
+.form_default select.white
+{
+    border:solid 1px #fff;
+    background-color:#fff;
+    color:#222;
+}
+.form_default input.black,
+.form_default textarea.black,
+.form_default select.black
+{
+    border:solid 2px #000;
+    background-color:#fff;
+    color:#222;
+}
+.form_default input.beige,
+.form_default textarea.beige,
+.form_default select.beige
+{
+    border:solid 1px #DAD6CC;
+    background-color:#fff;
+    color:#222;
+}
+.form_default input.gradient,
+.form_default textarea.gradient,
+.form_default select.gradient
+{
+    border:solid 1px #f4f5f5;
+    background-color:#fff;
+    color:#222;
+}
+
+#centercontent .form_default input[type='button'], #centercontent .form_default button,
+.form_default input[type='button'], .form_default button
+{
+    width:auto;
+}
+
+#centercontent .form_default input[type='button']:hover, #centercontent .form_default button:hover,
+.form_default input[type='button']:hover, .form_default button:hover
+{
+    width:auto;
+    border:solid 1px #000;
+    background-color:#fff !important;
+    color:#101010 !important;
+}
+
+/*-------------------------------------------------------------------------------
+FORM COOL BLUE
+-----------------------------------------------------------------------------*/
+
+.form_coolblue
+{
+    margin:0px;
+    padding:0px;
+    background-color:#fff;
+    color:#222;   
+}
+
+.form_coolblue form
+{
+    margin:0px;
+    padding:0px;
+}
+.form_coolblue fieldset,
+.form_coolblue section 
+{
+    position:relative;
+    border:0px;
+    border-top:solid 1px #ccc;
+    border-bottom:solid 1px #ccc;    
+}
+
+.form_coolblue fieldset + fieldset
+{
+    margin-top:15px;    
+}
+
+.form_coolblue fieldset legend,
+.form_coolblue .textblock_title
+{
+    background-color:#9DBED8;
+    color:#111;
+    font-size:1.2em;
+    font-weight:bold;
+    width:100%;
+    padding:2%;
+    box-sizing:border-box;
+    clear:both;
+    margin:0px;
+    margin-bottom:14px;
+   /* margin-left:15px; */
+
+}
+
+.form_coolblue fieldset p
+{
+    clear:left;
+    float:left;
+    margin:0px;
+    padding:0px;
+    margin-bottom:5px;
+    width:auto;
+}
+
+.form_coolblue fieldset label,.form_coolblue fieldset .radioTitle,
+.form_coolblue fieldset .checkboxTitle
+{
+    float:left;
+    width:200px;
+    font-weight:bold;
+    font-family:'gothambold1', serif;
+    font-size:.9em;
+}
+
+.form_coolblue fieldset label span
+{
+    float:left;
+    width:200px;
+    font-weight:bold;
+	font-family: 'open_sansregular', 'GothamBook', Verdana, Arial, sans-serif;
+    font-size:.9em;
+}
+
+.form_coolblue fieldset input,
+.form_coolblue fieldset textarea,
+.form_coolblue fieldset select
+{
+    float:left;
+    box-shadow:inset 0 1px 2px #DDD, 0 1px 0 #FFF;
+	-webkit-box-shadow:inset 0 1px 2px #DDD, 0 1px 0 #FFF;
+	-moz-box-shadow:inset 0 1px 2px #DDD, 0 1px 0 #FFF;
+	border:1px solid #CCC;
+	background-color:#FFF;
+	margin:0 0 3px;
+	padding:5px;
+	border-radius:5px;
+   
+}
+
+.form_coolblue input:focus,
+.form_coolblue select:focus
+{
+    border:solid 1px #66afe9;
+    box-shadow:0px 0px 8px #66afe9;
+}
+
+.form_coolblue input:focus.readonly
+{
+    border:solid 1px #aaa;
+    box-shadow:0px 0px 8px #555;
+}
+
+.form_coolblue select
+{
+    min-width:120px;
+}
+
+.form_coolblue select:required
+{
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+}
+
+.form_coolblue input[type='range']
+{
+    background:transparent;
+	margin:8px 3px;
+	padding:5px;
+	border:0px;
+	border-radius:0px;
+	 box-shadow:none;
+	-webkit-box-shadow:none;
+	-moz-box-shadow:none;
+	
+	
+}
+
+.form_coolblue .readonly
+{
+   background-color:#f7f7f7 !important;
+   border:solid 1px #ccc;
+   color:#222;
+	font-family: 'open_sansregular', 'GothamBook', Verdana, Arial, sans-serif;
+   font-size:.95em;
+   margin-left:8px;
+}
+
+.form_coolblue text em
+{
+    font-size:.75em;
+    color:#444;
+    letter-spacing:1px;
+}
+
+.form_coolblue input[type=range] {
+  -webkit-appearance: none;
+  margin-top:8px;  
+  width:72%;
+  box-sizing:border-box;
+}
+
+.form_coolblue input[type=range]:focus {
+  outline: none;
+}
+.form_coolblue input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 1px;
+  cursor: pointer;
+  box-shadow: 0.3px 0.3px 0.9px #1d508a, 0px 0px 0.3px #215c9f;
+  background: #002b54;
+  border-radius: 20px;
+  border: 0.2px solid #002b54;
+}
+
+.form_coolblue input[type=range]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px #222, 0px 0px 0px #0d0d0d;
+  border: 1px solid #222;
+  height: 15px;
+  width: 15px;
+  border-radius: 10px;
+  background: #1e5793;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -7.2px;
+}
+
+.form_coolblue input[type=range]:focus::-webkit-slider-thumb 
+{
+    background-color:#fff;
+    box-shadow:0px 0px 8px #66afe9;
+    border: 1px solid #66afe9;
+}
+
+.form_coolblue input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #002b54;
+}
+
+.form_coolblue input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 1px;
+  cursor: pointer;
+  box-shadow: 0.3px 0.3px 0.9px #1d508a, 0px 0px 0.3px #215c9f;
+  background: #002b54;
+  border-radius: 20.5px;
+  border: 0.2px solid #002b54;
+}
+
+.form_coolblue input[type=range]::-moz-range-thumb {
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  border: 1px solid #000000;
+  height: 15px;
+  width: 15px;
+  border-radius: 10px;
+  background: #1e5793;
+  cursor: pointer;
+}
+
+.form_coolblue input[type=range]::-ms-track {
+  width: 100%;
+  height: 1px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+.form_coolblue input[type=range]::-ms-fill-lower {
+  background: #002b54;
+  border: 0.2px solid #002b54;
+  border-radius: 41px;
+  box-shadow: 0.3px 0.3px 0.9px #1d508a, 0px 0px 0.3px #215c9f;
+}
+.form_coolblue input[type=range]::-ms-fill-upper {
+  background: #002b54;
+  border: 0.2px solid #002b54;
+  border-radius: 41px;
+  box-shadow: 0.3px 0.3px 0.9px #1d508a, 0px 0px 0.3px #215c9f;
+}
+.form_coolblue input[type=range]::-ms-thumb {
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  border: 1px solid #000000;
+  height: 15px;
+  width: 15px;
+  border-radius: 10px;
+  background: #1e5793;
+  cursor: pointer;
+  height: 1px;
+}
+
+.form_coolblue input[type=range]:focus::-ms-fill-lower {
+  background: #002b54;
+}
+
+.form_coolblue input[type=range]:focus::-ms-fill-upper {
+  background: #002b54;
+}
+
+.form_coolblue .form_sliderval{
+  width:20%;
+  float:left;
+  clear:none;
+  font-size:.8em;
+  background:#f7f7f7;
+  color:#333;
+  border:0px;
+  margin-top:3px;  
+  box-sizing:border-box;
+  border:0px;
+}
+
+
+.form_coolblue input[type=radio],
+.form_coolblue input[type=checkbox] {
+  float:left;
+  margin-top:8px;
+}
+
+.form_coolblue p label input[type=radio]:first-child
+{
+    margin-top:70px;
+}
+
+
+.form_coolblue input:required,
+.form_coolblue textarea:required
+{
+    background-image:url(../images/icons/bullet_red.png);
+    background-position:right;
+    padding-right:20px;
+    background-repeat:no-repeat;    
+}
+
+.form_coolblue input[type='checkbox']:required::after
+{
+   position:absolute;
+   left:135px;
+   content:"\2022";
+   font-size:1em;
+   padding:0px;
+   margin:0px;
+   color:#f00;
+   margin-right:30px;    
+}
+
+.form_coolblue input[type='checkbox']:checked:required::after
+{
+   position:absolute;
+   left:135px;
+   content:"*";
+   color:#3a3;
+   margin-right:30px;    
+}
+
+.form_coolblue select
+{
+    background-image:url(../images/icons/arrow_down.png);
+    background-position:right;
+    padding-right:30px;
+    background-repeat:no-repeat;
+}
+
+.form_coolblue select:required
+{
+    background-image:url(../images/icons/arrow_bullet_red.png);
+    background-position:right;
+    padding-right:30px;
+    background-repeat:no-repeat;
+}
+
+.form_coolblue aside
+{
+    float:left;
+    margin:0px;
+    padding:0px;
+    margin-top:10px;
+    margin-left:5px;
+    margin-bottom:5px;
+    font-size:.8em;
+    font-family:Helvetica,Arial, sans-serif;
+    font-style:italic;
+    letter-spacing:1px;   
+}
+
+
+ .small_space_forms_format fieldset aside {
+        clear:both;
+        float:left;
+        margin-bottom:5px;
+        font-size:.8em;
+        font-family:Helvetica,Arial, sans-serif;
+        color:#1E5793;
+        background-color:#fff;
+
+ }
+
+ 
+.form_coolblue input[type='checkbox'],
+.form_coolblue input[type='radio']
+{
+  position:absolute;
+  opacity:0;
+}
+
+.form_coolblue fieldset ul {
+    margin:0px !important;
+    padding:0px;
+    list-style-type:none;
+}
+.form_coolblue fieldset li {
+    float:left !important;
+    clear:both;
+    padding:0px;
+    padding-bottom:5px;
+    margin:0px;
+    box-sizing:border-box;
+    width:98%;
+    list-style-type:none !important;
+
+}
+.form_coolblue input[type="checkbox"]:focus + label span,
+.form_coolblue input[type="radio"]:focus + label span
+{
+    box-shadow: 0px 0px 2px 2px rgba(102,175,233, .8);
+}
+
+.form_coolblue input[type="radio"]:focus + label span
+{
+    border-radius:15px;
+}
+
+.form_coolblue input[type="checkbox"] + label span {
+    display:inline-block;
+    float:left;
+    width:19px;
+    height:19px;
+    margin:-2px 10px 0 0;
+    vertical-align:middle;
+    background:url(../images/icons/forms/form_bluetab.png) left top no-repeat;
+    cursor:pointer;
+}
+
+.form_coolblue input[type="checkbox"]:checked + label span {
+    background:url(../images/icons/forms/form_bluetab.png) -19px top no-repeat;
+}
+
+.form_coolblue input[type="checkbox"] + label {
+   /* color:#333;
+    background-color:#fff;*/
+    font-family:Arial, sans-serif;
+}
+
+.form_coolblue input[type="radio"] + label {
+   /* color:#333;
+    background-color:#fff;*/
+    font-family:Arial, sans-serif;
+}
+
+.form_coolblue input[type="radio"] + label span {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-2px 10px 0 0;
+    vertical-align:middle;
+    background:url(../images/icons/forms/form_bluetab.png) -38px top no-repeat;
+    cursor:pointer;
+}
+
+.form_coolblue input[type="radio"]:checked + label span {
+    background:url(../images/icons/forms/form_bluetab.png) -57px top no-repeat;
+}
+
+
+.form_coolblue input.lightBlue,
+.form_coolblue textarea.lightBlue,
+.form_coolblue select.lightBlue
+{
+    border:solid 1px #9DBED8;
+    background-color:#fff;
+    color:#222;
+}
+.form_coolblue p.medBlue input,
+.form_coolblue p.medBlue textarea,
+.form_coolblue p.medBlue select
+{
+    border:solid 1px #0059a2;
+    background-color:#fff;
+    color:#222;
+}
+.form_coolblue input.univBlue,
+.form_coolblue textarea.univBlue,
+.form_coolblue select.univBlue
+{
+    border:solid 1px #002B54;
+    background-color:#fff;
+    color:#222;
+}
+.form_coolblue input.orange,
+.form_coolblue textarea.orange,
+.form_coolblue select.orange
+{
+    border:solid 1px #F58220;
+    background-color:#fff;
+    color:#222;
+}
+.form_coolblue input.grey,
+.form_coolblue textarea.grey,
+.form_coolblue select.grey
+{
+    border:solid 1px #555;
+    background-color:#fff;
+    color:#222;
+}
+.form_coolblue input.white,
+.form_coolblue textarea.white,
+.form_coolblue select.white
+{
+    border:solid 1px #fff;
+    background-color:#fff;
+    color:#222;
+}
+.form_coolblue input.black,
+.form_coolblue textarea.black,
+.form_coolblue select.black
+{
+    border:solid 2px #000;
+    background-color:#fff;
+    color:#222;
+}
+.form_coolblue input.beige,
+.form_coolblue textarea.beige,
+.form_coolblue select.beige
+{
+    border:solid 1px #DAD6CC;
+    background-color:#fff;
+    color:#222;
+}
+.form_coolblue input.gradient,
+.form_coolblue textarea.gradient,
+.form_coolblue select.gradient
+{
+    border:solid 1px #f4f5f5;
+    background-color:#fff;
+    color:#222;
+}
+
+
+
+
+/*/////////////////////////////////////////////
+    FORM BLUE TAB
+/////////////////////////////////////////////////////*/
+.form_bluetab fieldset legend,
+.form_bluetab fieldset legend:hover 
+{
+    margin:auto;
+    display:block;
+    border:solid 3px #f7f7f7;
+    background-color:#0059a2;
+    color:#fff;
+    padding:1%;
+    border-top-left-radius:8px;
+    border-top-right-radius:8px;
+    text-align:center;
+    width:80%;
+    box-shadow:0px 0px 0px 2px #ccc;
+
+}
+
+.form_bluetab fieldset {
+      background:#ddd;
+      color:#333;
+      border-radius:8px;
+      border:solid 3px #fff;   
+      padding:1%;
+      box-sizing:border-box;
+  
+    }
+
+.form_bluetab fieldset label,
+.form_bluetab .checkboxTitle,
+.form_bluetab .radioTitle
+{
+    float:left;
+    width:80%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:normal;
+    font-size:.95em;
+    background-color:#ddd;
+    color:#282828;
+}
+.form_bluetab fieldset input,
+.form_bluetab fieldset select,
+.form_bluetab fieldset textarea
+{
+    clear:both;
+    float:left;
+    max-width:96%;
+}
+
+.form_bluetab input:required,
+.form_bluetab textarea:required
+{
+    background-image:url(../images/icons/bullet_red.png);
+    background-position:right;
+    padding-right:30px;
+    background-repeat:no-repeat;
+}
+
+
+.form_bluetab select:required
+{
+    background-image:url(../images/icons/arrow_bullet_red.png);
+    background-position:right;
+    padding-right:30px;
+    background-repeat:no-repeat;
+}
+
+.form_bluetab input:focus,
+.form_bluetab select:focus,
+.form_bluetab textarea:focus,
+.form_bluetab range:focus
+{
+   box-shadow: 0px 0px 2px 2px rgba(102,175,233, .8);
+}
+
+.form_bluetab aside
+{
+    clear:both;
+    float:left;
+    margin:0px;
+    margin-bottom:5px;
+    margin-top:10px;
+    margin-left:5px;
+    padding:0px;
+    font-size:.8em;
+	font-family:Helvetica,Arial, sans-serif;
+    font-style:italic;
+    letter-spacing:1px;
+    color:#143960;
+    background-color:#ddd;   
+}
+
+.form_bluetab input[type='checkbox'],
+.form_bluetab input[type='radio']
+{
+  position:absolute;
+  opacity:0;
+}
+
+.form_bluetab fieldset ul {
+    margin:0px !important;
+    padding:0px;
+    list-style-type:none;
+}
+.form_bluetab fieldset li {
+    float:left !important;
+    clear:both;
+    padding:0px;
+    padding-bottom:5px;
+    margin:0px;
+    box-sizing:border-box;
+    width:98%;
+    list-style-type:none !important;
+
+}
+.form_bluetab input[type="checkbox"]:focus + label span,
+.form_bluetab input[type="radio"]:focus + label span
+{
+    box-shadow: 0px 0px 2px 2px rgba(102,175,233, .8);
+}
+
+.form_bluetab input[type="radio"]:focus + label span
+{
+    border-radius:15px;
+}
+
+.form_bluetab input[type="checkbox"] + label span {
+    display:inline-block;
+    float:left;
+    width:19px;
+    height:19px;
+    margin:-2px 10px 0 0;
+    vertical-align:middle;
+    background:url(../images/icons/forms/form_bluetab.png) left top no-repeat;
+    cursor:pointer;
+}
+
+.form_bluetab input[type="checkbox"]:checked + label span {
+    background:url(../images/icons/forms/form_bluetab.png) -19px top no-repeat;
+}
+
+.form_bluetab input[type="checkbox"] + label {
+   /* color:#333;
+    background-color:#ddd;*/
+    font-family:Arial, sans-serif;
+}
+
+.form_bluetab input[type="radio"] + label {
+   /* color:#333;
+    background-color:#ddd;*/
+    font-family:Arial, sans-serif;
+}
+
+.form_bluetab input[type="radio"] + label span {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-2px 10px 0 0;
+    vertical-align:middle;
+    background:url(../images/icons/forms/form_bluetab.png) -38px top no-repeat;
+    cursor:pointer;
+}
+
+.form_bluetab input[type="radio"]:checked + label span {
+    background:url(../images/icons/forms/form_bluetab.png) -57px top no-repeat;
+}
+
+.form_bluetab input[type=range] {
+  -webkit-appearance: none;
+  margin-top:8px;  
+  float:left;
+  background:#ddd;
+  color:#333;
+  border:0px;
+  width:72%;
+  box-sizing:border-box;
+}
+
+.form_bluetab input[type=range]:focus {
+  outline: none;
+}
+
+.form_bluetab input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 1px;
+  cursor: pointer;
+  box-shadow: 0.3px 0.3px 0.9px #1d508a, 0px 0px 0.3px #215c9f;
+  background: #002b54;
+  border-radius: 20px;
+  border: 0.2px solid #002b54;
+}
+
+.form_bluetab input[type=range]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px #222, 0px 0px 0px #0d0d0d;
+  border: 1px solid #222;
+  height: 15px;
+  width: 15px;
+  border-radius: 10px;
+  background: #1e5793;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -7.2px;
+}
+
+.form_bluetab input[type=range]:focus::-webkit-slider-thumb 
+{
+    background-color:#fff;
+    box-shadow:0px 0px 8px #66afe9;
+    border: 1px solid #66afe9;
+}
+
+.form_bluetab input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #002b54;
+}
+
+.form_bluetab input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 1px;
+  cursor: pointer;
+  box-shadow: 0.3px 0.3px 0.9px #1d508a, 0px 0px 0.3px #215c9f;
+  background: #002b54;
+  border-radius: 20.5px;
+  border: 0.2px solid #002b54;
+}
+
+.form_bluetab input[type=range]::-moz-range-thumb {
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  border: 1px solid #000000;
+  height: 15px;
+  width: 15px;
+  border-radius: 10px;
+  background: #1e5793;
+  cursor: pointer;
+}
+
+.form_bluetab input[type=range]::-ms-track {
+  width: 100%;
+  height: 1px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+.form_bluetab input[type=range]::-ms-fill-lower {
+  background: #002b54;
+  border: 0.2px solid #002b54;
+  border-radius: 41px;
+  box-shadow: 0.3px 0.3px 0.9px #1d508a, 0px 0px 0.3px #215c9f;
+}
+.form_bluetab input[type=range]::-ms-fill-upper {
+  background: #002b54;
+  border: 0.2px solid #002b54;
+  border-radius: 41px;
+  box-shadow: 0.3px 0.3px 0.9px #1d508a, 0px 0px 0.3px #215c9f;
+}
+.form_bluetab input[type=range]::-ms-thumb {
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  border: 1px solid #000000;
+  height: 15px;
+  width: 15px;
+  border-radius: 10px;
+  background: #1e5793;
+  cursor: pointer;
+  height: 1px;
+}
+
+.form_bluetab input[type=range]:focus::-ms-fill-lower {
+  background: #002b54;
+}
+
+.form_bluetab input[type=range]:focus::-ms-fill-upper {
+  background: #002b54;
+}
+
+.form_bluetab .form_sliderval{
+  width:20%;
+  box-sizing:border-box;
+  float:left;
+  clear:none;
+  font-size:.8em;
+  background:#ddd;
+  color:#333;
+  border:0px;
+  margin-top:3px;
+}
+
+
+/*-----------------------------------------------------------
+    MOBILE / SMALL SPACE CSS
+------------------------------------------------------------*/
+
+
+.small_space_forms_format
+{
+     background-color:#fff;
+    color:#222;
+    width:100%;
+    box-sizing:border-box;
+    margin:0px;
+    padding:3px;
+    border:solid 1px #ccc;
+    float:left;
+}
+
+.small_space_forms_format #divFormSplashA, .small_space_forms_format #divFormSplashB, .small_space_forms_format #divFormSplashC,
+.small_space_forms_format #divFormSplashD, .small_space_forms_format #divFormSplashE, .small_space_forms_format #divFormSplashF,
+.small_space_forms_format #divFormSplashG, .small_space_forms_format #divFormSplashH, .small_space_forms_format #divFormSplashI,
+.small_space_forms_format #divFormSplashJ, .small_space_forms_format #divFormSplashK, .small_space_forms_format #divFormSplashL,
+.small_space_forms_format #divFormSplashM, .small_space_forms_format #divFormSplashN, .small_space_forms_format #divFormSplashO, 
+.small_space_forms_format #divFormSplashP, .small_space_forms_format #divFormSplashQ, .small_space_forms_format #divFormSplashR, 
+.small_space_forms_format #divFormSplashS, .small_space_forms_format #divFormSplashT, .small_space_forms_format #divFormSplashU,
+.small_space_forms_format #divFormSplashV, .small_space_forms_format #divFormSplashW, .small_space_forms_format #divFormSplashX,
+.small_space_forms_format #divFormSplashY, .small_space_forms_format #divFormSplashZ
+{
+   margin:2px !important;
+   float:left;
+}
+
+.small_space_forms_format #divFormA, .small_space_forms_format #divFormB, .small_space_forms_format #divFormC,
+.small_space_forms_format #divFormD, .small_space_forms_format #divFormE, .small_space_forms_format #divFormF,
+.small_space_forms_format #divFormG, .small_space_forms_format #divFormH, .small_space_forms_format #divFormI,
+.small_space_forms_format #divFormJ, .small_space_forms_format #divFormK, .small_space_forms_format #divFormL,
+.small_space_forms_format #divFormM, .small_space_forms_format #divFormN, .small_space_forms_format #divFormO, 
+.small_space_forms_format #divFormP, .small_space_forms_format #divFormQ, .small_space_forms_format #divFormR, 
+.small_space_forms_format #divFormS, .small_space_forms_format #divFormT, .small_space_forms_format #divFormU,
+.small_space_forms_format #divFormV, .small_space_forms_format #divFormW, .small_space_forms_format #divFormX,
+.small_space_forms_format #divFormY, .small_space_forms_format #divFormZ
+{
+    float:left;
+    width:98%;
+    margin:1%;
+    box-sizing:border-box;
+    padding:0%;
+   
+}
+
+.small_space_forms_format #divFormA div, .small_space_forms_format #divFormB div, .small_space_forms_format #divFormC div,
+.small_space_forms_format #divFormD div, .small_space_forms_format #divFormE div, .small_space_forms_format #divFormF div,
+.small_space_forms_format #divFormG div, .small_space_forms_format #divFormH div, .small_space_forms_format #divFormI div,
+.small_space_forms_format #divFormJ div, .small_space_forms_format #divFormK div, .small_space_forms_format #divFormL div,
+.small_space_forms_format #divFormM div, .small_space_forms_format #divFormN div, .small_space_forms_format #divFormO div, 
+.small_space_forms_format #divFormP div, .small_space_forms_format #divFormQ div, .small_space_forms_format #divFormR div, 
+.small_space_forms_format #divFormS div, .small_space_forms_format #divFormT div, .small_space_forms_format #divFormU div,
+.small_space_forms_format #divFormV div, .small_space_forms_format #divFormW div, .small_space_forms_format #divFormX div,
+.small_space_forms_format #divFormY div, .small_space_forms_format #divFormZ div
+{
+    clear:both !important;
+    float:left !important;
+    margin:1% !important;
+    padding:2px !important;
+    box-sizing:border-box !important;
+    width:98% !important;
+    height:auto !important;
+   
+}
+
+    .small_space_forms_format fieldset {
+
+        box-sizing:border-box !important;        
+        width:98% !important;
+        margin:1%  !important;
+        padding:0px !important;
+        clear:both !important;
+        float:left !important;
+        
+    }
+
+     .small_space_forms_format fieldset legend {
+
+       font-size:1em;
+       padding-bottom:5px;
+       color:#002b54;
+       background-color:#fff;
+       width:95%;
+       margin-left:0px;
+    }
+
+    .small_space_forms_format fieldset div {
+
+        float:left;
+        clear:both;
+        width:98%;
+        box-sizing:border-box;
+        height:auto;
+    }
+
+     .small_space_forms_format fieldset label, .small_space_forms_format fieldset .radioTitle, 
+     .small_space_forms_format fieldset .checkboxTitle {
+
+        font-size:.85em;
+        font-family:Arial,Helvetica,sans-serif;
+        font-weight:bold;
+
+    }
+
+
+    .small_space_forms_format fieldset label, 
+    .small_space_forms_format fieldset input,
+    .small_space_forms_format fieldset select,
+    .small_space_forms_format fieldset textarea {
+
+        float:left !important;
+        clear:both !important;
+        box-sizing:border-box !important;
+        height:auto !important;
+        width:98% !important;    
+    }
+    
+    .small_space_forms_format fieldset input[type='range']
+    {
+        width:70% !important;
+        clear:none !important;
+        float:left !important;
+    }
+
+    .small_space_forms_format fieldset input[type='text'].form_sliderval
+    {
+        width:20% !important;
+        float:left !important;
+        margin-left:2% !important;
+        clear:none !important;
+        text-align:center;
+    }
+
+    .small_space_forms_format fieldset aside {
+        clear:both;
+        float:left;
+        margin-bottom:5px;
+        font-size:.8em;
+        font-family:Helvetica,Arial, sans-serif;
+        color:#1E5793;
+        background-color:#fff;
+
+    }
+
+    
+.small_space_forms_format input[type='checkbox'],
+.small_space_forms_format input[type='radio']
+{
+  position:absolute;
+  opacity:0;
+}
+
+.small_space_forms_format fieldset ul {
+    margin:0px !important;
+    padding:0px;
+    list-style-type:none;
+}
+.small_space_forms_format fieldset li {
+    float:left !important;
+    clear:both;
+    padding:0px;
+    padding-bottom:5px;
+    margin:0px;
+    box-sizing:border-box;
+    width:98%;
+    list-style-type:none !important;
+
+}
+.small_space_forms_format input[type="checkbox"]:focus + label span,
+.small_space_forms_format input[type="radio"]:focus + label span
+{
+    box-shadow: 0px 0px 2px 2px rgba(102,175,233, .8);
+}
+
+.small_space_forms_format input[type="radio"]:focus + label span
+{
+    border-radius:15px;
+}
+
+.small_space_forms_format input[type="checkbox"] + label span {
+    display:inline-block;
+    float:left;
+    width:19px;
+    height:19px;
+    margin:-2px 10px 0 0;
+    vertical-align:middle;
+    background:url(../images/icons/forms/form_bluetab.png) left top no-repeat;
+    cursor:pointer;
+}
+
+.small_space_forms_format input[type="checkbox"]:checked + label span {
+    background:url(../images/icons/forms/form_bluetab.png) -19px top no-repeat;
+}
+
+.small_space_forms_format input[type="checkbox"] + label {
+    color:#333;
+    background-color:#fff;
+    font-size:.85em;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+.small_space_forms_format input[type="radio"] + label {
+    color:#333;
+    background-color:#fff;
+    font-size:.85em;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+.small_space_forms_format input[type="radio"] + label span {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-2px 10px 0 0;
+    vertical-align:middle;
+    background:url(../images/icons/forms/form_bluetab.png) -38px top no-repeat;
+    cursor:pointer;
+}
+
+.small_space_forms_format input[type="radio"]:checked + label span {
+    background:url(../images/icons/forms/form_bluetab.png) -57px top no-repeat;
+}
+
+
+@media screen and (min-width:1200px) and (max-width:1399px) {
+
+
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++                               END OF CSS FILE                                       +
++     IF YOU WANT TO OVER RIDE THESE STYLES PLEASE DO IT IN THE CSS OVERRIDE FILES    +
++     CHANGES TO THIS FILE WILL BE DELETED UPON NEXT TEMPLATE UPDATE                  +
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/

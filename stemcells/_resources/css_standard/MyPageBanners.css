@@ -1,0 +1,48 @@
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++                    WARNING:    DO NOT UPDATE OR CHANGE THIS FILE                    +
++     IF YOU WANT MODIFY THESE STYLES PLEASE USE THE OVERRIDE FILE IN YOUR CSS_SITE   +
++     FOLDER, UPDATES TO THESE STYLES DELETED UPON NEXT TEMPLATE UPGRADE              +
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+#PageBanner
+{
+    display:block;
+    position:relative;
+    clear:both;
+    width:100%;
+    margin:0;
+    padding:0;
+}
+
+#PageBanner .container
+{
+    margin:0;
+    max-width:100%;
+}
+
+#PageBanner p 
+{
+    margin:0 !important;
+    padding:0 !important;
+    border:0 !important;
+    line-height:normal !important;
+}
+
+#PageBanner img
+{
+    width:100%;
+    height:auto;
+    margin:0;
+    padding:0;
+    border:0;
+    line-height:normal;
+    float:left;
+}
+
+
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++                               END OF CSS FILE                                       +
++     IF YOU WANT TO OVER RIDE THESE STYLES PLEASE DO IT IN THE CSS OVERRIDE FILES    +
++     CHANGES TO THIS FILE WILL BE DELETED UPON NEXT TEMPLATE UPDATE                  +
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/

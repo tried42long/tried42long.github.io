@@ -1,0 +1,872 @@
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++                    WARNING:    DO NOT UPDATE OR CHANGE THIS FILE                    +
++     IF YOU WANT MODIFY THESE STYLES PLEASE USE THE OVERRIDE FILE IN YOUR CSS_SITE   +
++     FOLDER, UPDATES TO THESE STYLES DELETED UPON NEXT TEMPLATE UPGRADE              +
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+/*-------------------------------------------------------------
+PLEASE NOTE: 
+
+        !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                IMPORTANT MESSAGE 
+        ALL CLASSES FOR FORMS MUST
+        START WITH .Form AS THE PAGE CREATION
+        PROCESS WILL IDENTIFY IT AS A FORM 
+        SECTION AND ENTER FormDefault WHEN NO
+        FORM CLASS IS IDENTIFIED BY THE 
+        CONTENT CREATOR        
+        !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+---------------------------------------------------------------*/
+#divWorkspaceDetails
+{
+    position:absolute;
+    top:10px;
+    left:10px;
+    height:100px;
+    width:200px;
+    z-index:50000000000;
+    border:solid 2px #f00;
+    background-color:#fff;
+    color:#222;
+    display:none;
+    height:0px;
+    width:0px;
+}
+
+.FrameworkEditor_Container_closed
+{
+    position:fixed;
+    z-index:600000;
+    width:0px;    
+    height:0px;
+    padding:0px;
+    margin:0px;
+    top:-500px;
+    left:-500px;
+    transition: all 1s;
+    border:solid 3px #888;
+}
+
+.FrameworkEditor_Container_open
+{
+    position:fixed;
+    z-index:600000;
+    width:95%;
+    height:92%;
+    margin:1%;
+    padding:1%;
+    top:0px;
+    left:0px;
+    background-color:#fff;
+    border:solid 3px #888;
+    transition: all 1s;
+}
+
+.FrameworkEditor_Close
+{
+    position:absolute;
+    right:10px;
+    top:0px;
+    height:2%;
+    width:3%;
+    z-index:40000;
+}
+
+.FrameworkEditor_Close input[type='button']
+{
+    padding:5px;
+    border-radius:4px;
+}
+
+
+.FrameworkEditor_holder
+{
+    position:relative;
+    max-height:680px;
+    min-height:400px;
+    width:100%;
+    margin:0px;
+    padding:0px;
+    margin-top:1%;
+    overflow-y:scroll;
+}
+
+#divFrameworkOptions
+{
+    float:left;
+    width:24%;
+    max-width:300px !important;
+    color:#222;
+    background-color:#fafafa;
+    border:solid 1px #000;
+    padding:10px;
+    margin-right:1%;
+    max-height:680px;
+    min-height:400px;
+    border-radius:6px;
+    box-shadow:2px 2px 4px rgba(0,0,0,.5);   
+}
+
+.FrameworkEditor_Status
+{
+    margin:0px;
+    padding:0px;
+}
+
+.FrameworkEditor_Status label
+{
+    margin-bottom:5px;
+}
+
+#divFrameworkOptions ul
+{
+    margin-bottom:0px;
+    padding:5px;
+    margin-left:5px;
+    list-style-type:none;
+}
+
+#divFrameworkOptions li
+{
+    margin:0px;
+    padding:5px;
+}
+
+#divFrameworkOptions li input
+{ width:80%;
+  margin:5%;}
+
+
+.txtFrameworkStatus
+{
+    font-size:.85em !important;
+    background-color:#fff;
+    color:#222;
+    transition: all 1s;
+    
+    }
+
+.txtFrameworkStatus.StatusChange_start
+{
+    background-color:#E0EDF6;
+    border:solid 1px #225FB0;
+    color:#222;
+    transition: all 1s;
+}
+
+.txtFrameworkStatus.StatusChange
+{
+    background-color:#C3DCF6;
+    border:solid 1px #9DBED8;
+    color:#222;
+    transition: all 2s;
+}
+
+.txtFrameworkCSS
+{
+    background-color:#fff;
+    color:#222;
+    border:solid 1px #ccc;
+    padding:3px;
+    width:170px;    
+}
+
+#divFrameworkOptions span
+{
+    font-weight:bold;
+    float:left;
+    color:#f7f7f7;
+    background-color:#222;
+    width:80px;
+    font-size:.75em !important;
+    
+}
+
+#divFrameworkOptions a
+{
+    color:#f7f7f7;
+    background:#222;
+}
+
+.FrameworkEditor_holder #divFramework
+{
+    float:left;
+    width:98%;
+    margin:1%;
+    margin-top:0%;
+    max-width:1400px !important;
+    border:dashed 0px #cdcdcd;
+    box-sizing:border-box;
+}
+
+#divFrameworkOptions hr
+{
+    clear:both;
+    
+}
+
+#divPreviewHeaderLink
+{
+    float:right;
+    margin-right:50px;
+    height:40px;
+}
+
+#divFrameworkPreviewHoursText{
+    float:right;
+    margin-left:50px;
+    height:40px;
+}
+/*-----------------------------------------------
+    HOURS EDITOR CSS
+---------------------------------------------------*/
+
+.hours_confrimhours_delete_off {
+    display:none !important;
+}
+
+.hours_left_menu, .hours_edit_space, .hours_preview_workspace
+{
+    float:left;
+    margin-left:15px;
+    border:solid 0px #aaa;
+}
+
+.hours_left_menu
+{
+    margin-left:0px;
+}
+
+.hours_left_menu
+{
+    width:200px;
+}
+.HoursMenu_Items, .HoursMenu_Items li
+{
+    margin:0px;
+    box-sizing:border-box;
+    float:left;
+    padding:0px;
+    width:100%;
+    list-style:none !important;
+}
+
+.HoursMenu_Items li > ul > li 
+{
+        margin:0px;
+        padding:0px;
+        padding-left:10px;
+        width:100%;
+        box-sizing:border-box;
+}
+
+
+
+.Hours_OtherExtraLinks
+{
+    width:95%;
+    margin:0px;
+    padding:2px;
+    padding-left:15px;
+    box-sizing:border-box;
+    float:left;
+    margin-bottom:5px;
+    max-height:80px;
+    overflow:scroll;
+    transition:all 1s;
+}
+
+.Hours_OtherExtraLinks:hover {
+        max-height:300px;
+    }
+
+.Hours_OtherExtraLinks li
+{
+    width:100%;
+    margin:0px;
+    height:22px;
+    overflow:hidden;
+    border-bottom:solid 1px #ccc;
+    box-sizing:border-box;
+}
+
+.Hours_OtherExtraLinks li a
+{
+    
+    width:100%;
+
+    box-sizing:border-box;
+    font-size:.75em;
+    font-family:Arial, sans-serif;
+    background-color:transparent;
+    color:#0057ab;
+}
+
+.HoursMenu_Items .button, .HoursMenu_Items .pill
+{
+    padding:3px;
+    font-size:.8em;
+    width:90% !important;
+    margin:auto;
+    box-sizing:border-box;
+    float:left;
+    text-align:left !important;
+}
+
+.Hours_OtherHours_opened, .Hours_CurrentEvents_opened
+{
+    height:auto;
+    width:100%;
+    float:left;
+    overflow-y:auto;
+    transition:.5s;
+}
+
+.Hours_OtherHours_closed, .Hours_CurrentEvents_closed
+{
+   height:0px;
+   overflow:hidden;
+   width:100%;
+   float:left;
+   overflow-y:auto;
+   transition:.5s;
+}
+
+.Hours_OtherDelete {
+    position:absolute;
+    top:2px;
+    right:2px;
+    width:30px;
+    height:30px;
+    text-align:center;
+}
+
+.Hours_OtherDelete input[type='button'  ]
+{
+    text-align:center;
+    width:25px;
+    height:25px;
+    font-size:.75em;
+    margin:3px;
+    padding:3px;
+    background-color:#ffedec;
+    color:#750707;
+}
+
+.hours_left_menu
+{
+    width:15%;
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+.hours_edit_space
+{
+    width:30%;
+    margin:0px;
+    padding:15px;
+    box-sizing:border-box;
+}
+
+.hours_preview_workspace
+{
+    width:55%;
+    margin:0px;
+    padding:15px;
+    box-sizing:border-box;
+    
+}
+
+/*------------------------------------------
+    HOURS FORM CSS
+----------------------------------------------*/
+.Hours_Form{
+    margin:1%;
+    padding:0px;
+    border:solid 1px #ccc;
+    background-color:#fff;
+    box-sizing:border-box;
+    box-shadow:2px 2px 6px rgba(0,0,0,.2);
+    border-radius:4px;
+    padding-bottom:50px;
+    max-height:560px;
+    overflow-y:auto;
+    float:left;
+    position:relative;
+
+}
+.Hours_Form p{
+    
+    float:left;
+    box-sizing:border-box;
+    margin:0px;
+    padding:2%;
+}
+
+.Hours_Form fieldset
+{
+    margin-top:10px !important;
+    margin-bottom:5px;
+    border-top:solid 1px #ccc;
+    border-bottom:solid 1px #ccc;
+    float:left;
+}
+
+.Hours_Form legend
+{
+    font-family:Arial;
+    font-size:.85em;
+    margin-bottom:5px;
+    
+}
+
+.Hours_Form label
+{
+    float:left;
+    width:90px;
+    font-family:'Trebuchet MS', sans-serif;
+
+}
+
+.Hours_timeblock
+{
+   clear:both; 
+   position:relative;
+   border-bottom:solid 1px #0057ab;
+   margin-bottom:5px;
+   float:left;
+   background:#fff;
+   color:#232323;
+}
+.Hours_timeblock:last-child
+{
+    border-bottom:0px;
+}
+
+.Hours_timeblock:hover
+{
+   background:#dfdfdf;
+   color:#232323;
+}
+
+.Hours_text:active, .Hours_text:focus,
+.Hours_check:active, .Hours_check:focus,
+.Hours_radio:active, .Hours_radio:focus, 
+.Hours_select:active, .Hours_select:focus
+{
+    border:solid 1px #e17000;
+
+}
+
+.Hours_select, .Hours_text
+{
+    font-size:.8em; 
+    line-height:normal;
+    font-family:Arial;
+    background:#fff;
+    color:#232323;
+    padding: .35em;
+    border-radius: 4px;
+    border:solid 1px #999;
+    box-sizing:border-box;
+}
+
+.Hours_Form input[type="button"]
+{
+    padding:6px;
+    font-size:.8em;
+    
+}
+
+.Hours_MainSave_Active, .Hours_MainSave{
+     font-size:.75em; 
+     padding:3px !important; 
+     padding-top:5px !important;
+     padding-left:8px !important;
+     border-top-left-radius:4px; 
+     border-bottom-right-radius:4px; 
+     width:85% !important;
+     margin:0px 0px 5px 0px !important;
+     border-bottom:solid 3px #ccc;
+     border-right:solid 2px #ccc;
+     background-color:#dfdfdf !important;
+     color:#232323;
+     float:left;
+     opacity:0;
+     box-sizing:border-box;
+     transition:1s;
+}
+
+.Hours_MainSave_Active input[type='button'], .Hours_MainSave input[type='button']
+{
+    margin:2px !important;
+}
+
+.Hours_MainSave_Active
+{
+    opacity:1;
+    transition:1s;
+}
+
+/*-------------------------------------------------
+    HOURS CALENDAR PREVIEW / CALENDARD STANDARD
+-----------------------------------------------------*/
+
+.HoursEventsCalendar_Month
+{
+    box-sizing:border-box;
+    width:100%;
+    padding:0px;
+    float:left;
+    margin:1%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.HoursEventsCalendar_Month li
+{
+    float:left;
+    list-style-type:none !important;
+    margin-left:1%;
+    margin-bottom:1%;
+    width:13%;
+    font-size:.85em;
+    box-sizing:border-box;
+    padding:1%;
+}
+
+.HoursEventsCalendar_Month li:nth-child(-n+7) 
+{
+    text-align:center;
+    font-size:.75em;
+    font-family:Helvetica, Arial, sans-serif;
+    background-color:#22517B !important;
+    color:#fff !important;
+    border:solid 1px #ccc;    
+}
+
+    .HoursEventsCalendar_Month li:nth-child(7n+1) {
+        clear:both;
+        float:left;
+    }
+.HoursEventsCalendar_Month li span.time
+{
+    clear:both;
+    float:left;
+    width:100%;
+    text-align:center;
+    font-size:.75em;
+}
+
+.HoursEventsCalendar_Month li span.time:first-child
+{   
+    padding-top:8px;
+}
+    
+.HoursEventsCalendar_List
+{
+    box-sizing:border-box;
+    width:98%;
+    padding:0px;
+    float:left;
+    margin:1% !important;
+    border:solid 0px #ccc;
+    border-radius:4px;
+    max-height:400px;
+    overflow-y:scroll;
+}
+
+.HoursEventsCalendar_List li
+{
+    float:left;
+    list-style-type:none !important;
+    margin:0px !important;
+    margin-bottom:3px !important;
+    width:98%;
+    padding:1%;
+    font-size:.85em;
+    box-sizing:border-box;
+}
+
+.activeday, .non_activeday
+{
+    height:60px;
+    padding-top:22px;
+    border:solid 1px #ccc;
+    background-color:#fff !important;
+    color:#444 !important;
+    position:relative;
+    text-align:center;
+}
+
+.HoursEventsCalendar_List li:nth-child(-n+7),  
+.HoursEventsCalendar_List .non_activeday 
+{
+    display:none;
+}
+
+.HoursEventsCalendar_List li.activeday 
+{
+    height:auto;
+}
+
+.today, .today p
+{
+    background-color:#22517B !important;
+    color:#fff !important;
+}
+
+.non_activeday
+{
+    border:solid 1px #ccc;
+    background-color:#bbb !important;
+    color:#232323 !important;
+    
+}
+
+.ShowTheDay
+{
+    position:absolute;
+    top:0px;
+    left:0px;
+    background-color:#f5f5ec;
+    color:#222;
+    padding:2px;
+    border-bottom-right-radius:4px;
+    font-size:.75em;
+}
+
+.CalendarHolder {
+     float:left; 
+     width:100%; 
+     box-sizing:border-box; 
+     margin-bottom:1%;
+     border:solid 1px #ccc;
+     border-radius:4px;
+    transition:all 2s;
+}
+
+.CalendarHolder .HideCalendar
+{
+   background-color:#f00;
+    transition:all 2s;
+}
+
+.CalendarHolder .ShowCalendar{
+    visibility:1;
+    transition:all 2s;
+}
+
+/*------------------------------------------
+    HOURS PUBLIC DISPLAY CLASSES
+    -------------------------------------------*/
+.Hours_CalendarPreview_Main
+{
+    background-color:#fff;
+    color:#222;
+    border:solid 1px #ccc;
+    padding:1%;
+    float:left;
+    width:100%;
+    margin:0px;
+    box-sizing:border-box;
+    box-shadow:0px 2px 4px 2px rgba(0,0,0,.3);
+    
+}
+.Hours_CalendarPreview_Main h2{
+    margin-bottom:3px;
+    color:#0057ab;
+    background-color:#fff;
+
+}
+
+    .Hours_CalendarPreview_Main .ActiveHoursText {
+        font-size:.75em;
+        font-style:italic;
+        margin-bottom:12px;
+        box-sizing:border-box;
+        border-bottom:solid 1px #dfdfdf;
+        
+    }
+
+.Hours_CalendarPreview_Main .CalendarHolder
+{
+    float:left;
+    display:block;
+    width:90%;
+    box-sizing:border-box;
+    margin-left:5%;
+    padding:0px;
+    border:0px;
+}
+
+.Hours_CalendarPreview_Main .CalendarHolder span 
+{
+        border:solid 1px #fff;
+        box-sizing:border-box;
+        width:34%;
+        float:left;
+    }
+
+.Hours_CalendarPreview_Main .CalendarHolder a
+{
+    float:left;
+    width:33%;
+    background-color:#0057ab;
+    color:#fff;
+    border:solid 1px #fff;
+    box-sizing:border-box;
+}
+
+.Hours_CalendarPreview_Main .CalendarHolder a:hover
+{
+    background-color:#fff;
+    color:#0057ab;    
+    border:solid 1px #0057ab;
+}
+
+    .Hours_CalendarPreview_Main .CalendarHolder a:first-child {
+        border-top-left-radius:10px;
+        border-bottom-left-radius:10px;
+    }
+
+     .Hours_CalendarPreview_Main .CalendarHolder a:last-child {
+        border-top-right-radius:10px;
+        border-bottom-right-radius:10px;
+    }
+
+/*----------------------------------
+    HOURS TEXT PREVIEW
+------------------------------------*/
+
+.Hours_PreviewText {
+   float:right;
+   margin-top:-1px;
+   margin-bottom:0px;
+   height:41px;
+   margin-right:20px;
+   padding:5px;
+   padding-left:25px;
+   padding-right:25px;
+   box-sizing:border-box;
+   font-family:Arial;
+   font-size:.75em;
+   background-color:#003366;
+   background:#003366;
+   color:#f7f7f7 !important;
+   position:relative;
+}
+
+.Hours_PreviewText::before{
+     content: '';
+    height: 40px;
+    width: 15px;
+    background-color: #003366;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    transform: skewX(-20deg);
+    transform-origin: top;
+    -webkit-transform: skewX(-20deg);
+    -webkit-transform-origin: 0 0;
+    border-left:solid 1px #f7f7f7;
+}
+
+.Hours_PreviewText::after{
+     content: '';
+    height: 40px;
+    width: 15px;
+    background-color: #003366;
+    position: absolute;
+    top: 0;
+    right:-15px;
+    transform: skewX(-20deg);
+    transform-origin: top;
+    -webkit-transform: skewX(-20deg);
+    -webkit-transform-origin: 0 0;
+    border-right:solid 1px #f7f7f7;
+}
+
+
+.Hours_PreviewText p{
+    background-color:#003366;
+    color:#F7F7F7;
+}
+
+/*---------------------------------------*/
+
+.Hours_ClosureList{
+   float:left; 
+   width:96%; 
+   margin:1%; 
+   padding:1%; 
+   list-item-style:none;
+   max-height:200px;
+   overflow-y:scroll;
+   border-bottom:solid 2px #E17000;
+}
+
+.Hours_ClosureList li{
+   float:left; 
+   width:98%; 
+   padding:1%;
+   border-bottom:solid 1px #dfdfdf;
+}
+
+.Hours_ClosureList li a{
+   background-color:#fff;
+   color:#235392;
+}
+
+.Hours_ClosureList li span {
+   float:right;
+}
+
+
+.Hours_ClosureList li span a{
+   background-color:#dfdfdf;
+   color:#232323;
+   font-size:.7em;
+   padding:3px;
+   border:solid 1px #ccc;
+}
+
+.Hours_ClosureList li span a:hover{
+   background-color:#232323;
+   color:#dfdfdf;
+}
+
+.HoursEventsCalendar_Month .ClosedCalendarDay {
+    font-size:.75em;
+    float:left;
+    margin:auto;
+    display:block;
+    width:90%;
+    font-style:italic;
+    padding:5px;
+    background-color:transparent;
+    color:#0057ab;
+    letter-spacing:1px;
+}
+
+.HoursEventsCalendar_Month .today .ClosedCalendarDay {
+    font-size:.75em;
+    float:left;
+    margin:auto;
+    display:block;
+    width:90%;
+    font-style:italic;
+    padding:5px;
+    background-color:transparent;
+    color:#fff;
+    letter-spacing:1px;
+}
+
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++              END OF STANDARD STYLES YOU ARE                                         +
++     USE THE MY STYLE OVERRIDE CSS FILE TO ADJUST STYLES AS NEEDED                   +
++     PLEASE MAINTAIN YOUR SITE NAVIGATION SECTION IN THE MY NAVIGATION CSS FILE      +
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+

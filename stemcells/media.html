@@ -126,7 +126,7 @@
 </script><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">//loading jquery from google CDN
 </script><link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" /><link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css" /><script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js">//loading jquery ui from google CDN
 </script><script type="text/javascript" src="https://www.fullerton.edu/marc/_resources/js_standard/parallax.js" >//parallax code base;
-</script><script type="text/javascript" src="https://www.fullerton.edu/marc/_resources/js_standard/page_features.js" >//standard page features;
+</script><script type="text/javascript" src="./_resources/js_standard/page_features.js" >//standard page features;
 </script><script type="text/javascript" src="https://www.fullerton.edu/marc/_resources/js_site/_ExtraJSFiles.js" >//site import js files;
 </script>
 <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js'></script>
@@ -135,6 +135,17 @@
 <link rel="stylesheet" href="js/unslider-dots.css">
 
 <style>
+
+    
+      * {
+            box-sizing: border-box;
+      }
+      
+      table, th, td {
+            border: 0;
+            padding: 0;
+      }
+
       .unslider-arrow {
             display: block;
             width: 32px;
@@ -160,28 +171,29 @@
 
 
       /* Create two unequal columns that floats next to each other */
-      .home_column {
+      .column {
             float: left;
       }
 
       .left {
-            width: 75%;
+            width: 50%;
+            text-align: center;
       }
 
       .right {
-            float: center;
-            width: 25%;
+            float: left;
+            width: 50%;
       }
 
       /* Clear floats after the columns */
       .row:after {
-      content: "";
-      display: table;
-      clear: both;
+            content: "";
+            display: table;
+            clear: both;
       }
 
       @media (max-width: 600px) {
-    .column {
+      .column {
         width: 100%;
     }
 }
@@ -310,16 +322,14 @@
             <span>This area is the end of the navigation, if you are tabbing this should close out the extended nav</span>
          </a>
       </div>
-      <div id="PageBanner">	
-            <div class="my-slider">
-                  <ul>
-                        <!-- <li><img src='../stemcells/images/home_image1.jpg' /></li> -->
-                        <li><img src='http://bscr-csuf.intelijens.com/stemcells/images/home_image5.jpg' alt="Cell Closeup"/></li>
-                        <li><img src='http://bscr-csuf.intelijens.com/stemcells/images/home_image3.jpg' alt="Biology Lab Building"/></li>
-                        <li><img src='http://bscr-csuf.intelijens.com/stemcells/images/home_image2.jpg' alt="Lab Process"/></li>
-                  </ul>
-            </div>
+
+      
+      <div id="PageBanner">
+                  <div><img src="./media_old_files/media_image1.jpg" alt="media banner"></div>
       </div>
+
+
+
       <div id="MainContent"
            role="main"
            onmouseover="Navigation_CloseExtendedMainNav()">
@@ -327,37 +337,46 @@
             <div id="centercontent" class="Show100Wide"><a name="skipnavigation" id="skipnavigation"></a><div id="layoutcontainer" class="T3_101">
                   <div id="divA" class="divA ">
                      <div id="divA_content" class=" hascontent">
-                        
-                        <div class="row">
-                              <div class="home_column left">
-                        <h1 style='margin-top:40px;'>Program</h1>
-                        <p>The Bridges to Stem Cell Research (BSCR) program trains Scholars in the basic stem cell biology techniques at CSU-Fullerton during a 7-month pre-internship (June - December). The Scholars then complete their 7-month paid internship in a lab of their choice at one of the collaborating institutions. You can find more information about the BSCR program through the <a href="http://bscr-csuf.intelijens.com/stemcells/program">"Program" link</a>.</p>
-
-                        <h1 style='margin-top:40px;'>Requirements</h1>
-                        <p>Biology students must be enrolled in (or have completed) BIOL 302 and either BIOL 303 or BIOL 309. Biochemistry students must be enrolled in (or have completed) CHEM 421 or CHEM 423. Successful candidates are likely to have a good GPA, be highly recommended by their instructors, and have demonstrable interest in stem cell biology. Prior research experience is not required to be accepted into this program.</p>
-
-                        <h3 style='text-transform:uppercase;color:#47ab10; text-align:left; margin-top:40px;'>Goal: To prepare ten undergraduate Stem Cell Scholars through hands-on research experience and a selected set of courses.</h3>
-                        
-                        <p style='text-align:center;'>
-                        <a href='http://bscr-csuf.intelijens.com/stemcells/application'>
-                              <img src ='http://bscr-csuf.intelijens.com/stemcells/images/apply.jpg'alt="Apply Icon"/>
-                        </a>
-                        </p>
-                        </div>
-                        <div class="home_column right">
-                              <h3 style='text-align:center;'>Symposium</h3>
-                              <center><a href="http://bscr-csuf.intelijens.com/stemcells/symposium"><img src ='http://www.msi.harvard.edu/images/sym07.jpg'style='width:50%' alt="Symposium Banner"/></a></center>
-                              </br>
-                              <h3 style='text-align:center;'>Media</h3>
-                              <center><a href="http://bscr-csuf.intelijens.com/stemcells/media"><img src ='http://www.cirm.ca.gov/sites/default/files/logo-cirm-2_0.png'style='width:50%'alt="Media Banner"/></a></center>
-                        </div>
+                      
+                              <div>
+                                    <br><br>
+                                        <h2 style="text-align: center; color: #002e5b">Media and News Articles</h2><br><br>
+                                        <div class="box">
+                                            <img src="./media_old_files/logo_cirm.png" alt="CIRM logo">
+                                            <p><a target="_blank" href="https://www.cirm.ca.gov/about-cirm/newsroom/press-releases/01192016/cirm-invests-42-million-train-next-generation-stem-cell">CIRM  Invests $42 Million to Train Next Generation of Stem Cell Scientists</a></p>
+                                            <p><a target="_blank" href="http://www.youtube.com/watch?feature=player_embedded&amp;v=EVEwYFAxmZk">CIRM  Bridges: Training the Next Generation of Stem Cell Scientists</a></p>
+                                            <p><a target="_blank" href="https://www.cirm.ca.gov/about-cirm/newsroom/press-releases/12102009/cirm-provides-11-million-boost-funding-train-stem-cell">CIRM  Provides $11 Million Boost in Funding to Train Stem Cell Scientists</a></p>
+                                            <p><a target="_blank" href="http://www.cirm.ca.gov/our-funding/awards/stem-cell-training-program-csu-fullerton-bridge-stem-cell-research">Stem  Cell Training Program at CSU Fullerton - A Bridge to Stem Cell Research</a></p><br><br>
+                                        </div>
+                                        <div class="box">
+                                            <img src="./media_old_files/logo_ocregister.jpg" alt="OC Register logo">
+                                            <p><a target="_blank" href="http://www.ocregister.com/articles/stem-706601-students-program.html">CSUF  stem cell research training progresses with another $3 million grant</a></p>
+                                            <p><a target="_blank" href="http://www.ocregister.com/articles/research-701349-stem-cell.html">Cal  State Fullerton gets $3 million grant to help in stem cell research</a></p>
+                                            <p><a target="_blank" href="http://www.ocmetro.com/t-csu_fullerton_stem_cell_symposium_12012010.aspx">Stem  cell experts gather at Cal State Fullerton on Friday</a></p>
+                                            <p><a target="_blank" href="http://sciencedude.blog.ocregister.com/2008/10/03/csuf-to-train-stem-cell-workers/5046/">CSUF  to train stem cell workers</a></p><br><br>
+                                        </div>
+                                        <div class="box">
+                                            <img src="./media_old_files/logo_csufnews.jpg" alt="CSUF News logo">
+                                            <p><a target="_blank" href="http://news.fullerton.edu/2016wi/stem-cell-grant.aspx">CSUF Awarded $3  Million Grant to Train Stem Cell Scientists</a></p>
+                                            <p><a target="_blank" href="http://news.fullerton.edu/2015wi/stem-cell-symposium.asp">Stem Cell  Therapies for Neurodegenerative Diseases Discussed</a></p>
+                                            <p><a target="_blank" href="http://news.fullerton.edu/2013su/stem-cell-program.asp">Scholars Begin  Stem Cell Studies</a></p>
+                                            <p><a target="_blank" href="http://calstate.fullerton.edu/inside/2011su/Stem-Cell-Research.asp">Training  Future Researchers Undergraduates Conduct Stem Cell Studies at Local Labs</a></p>
+                                            <p><a target="_blank" href="http://calstate.fullerton.edu/news/2012su/Bridges-to-Stem-Cell-Research-Program.asp">$2.6  Million in Stem Cell Grants </a></p>
+                                            <p><a target="_blank" href="http://calstate.fullerton.edu/news/2012su/Bridges-to-Stem-Cell-Research-Program.asp">Undergrad  Research Promotes Careers in Regenerative Medicine</a></p>
+                                            <p><a target="_blank" href="http://calstate.fullerton.edu/news/Inside/spotlight/2010/stem-cell-research/">Spotlight:  Stem Cell Research</a></p><br><br>
+                                        </div>
+                                        <div class="box">
+                                            <img src="./media_old_files/logo_dailytitan.jpg"alt="Daily Titan logo">
+                                            <p><a target="_blank" href="http://www.dailytitan.com/2012/04/stem-cell-research-presented/">Stem cell research presented</a></p>
+                                            <p><a target="_blank" href="http://www.dailytitan.com/2012/02/students-intern-for-stem-cell-research/">Students intern for stem cell research</a></p>
+                                            <p><a target="_blank" href="http://www.dailytitan.com/2010/01/1-28-million-grant-awarded-to-csuf-for-stem-cell-research/">$1.28 million grant award to CSUF for  stem-cell research</a></p><br><br>
+                                        </div>
 
                   </div>
-             
-                        
+
+                  </div>
+                  </div>                        
                      </div>
-                  </div>
-                  
                   </div>
                </div>
             </div>

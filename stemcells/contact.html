@@ -126,7 +126,7 @@
 </script><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">//loading jquery from google CDN
 </script><link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" /><link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css" /><script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js">//loading jquery ui from google CDN
 </script><script type="text/javascript" src="https://www.fullerton.edu/marc/_resources/js_standard/parallax.js" >//parallax code base;
-</script><script type="text/javascript" src="https://www.fullerton.edu/marc/_resources/js_standard/page_features.js" >//standard page features;
+</script><script type="text/javascript" src="./_resources/js_standard/page_features.js" >//standard page features;
 </script><script type="text/javascript" src="https://www.fullerton.edu/marc/_resources/js_site/_ExtraJSFiles.js" >//site import js files;
 </script>
 <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js'></script>
@@ -135,6 +135,15 @@
 <link rel="stylesheet" href="js/unslider-dots.css">
 
 <style>
+      * {
+            box-sizing: border-box;
+      }
+      
+      table, th, td {
+            border: 0;
+            padding: 0;
+      }
+
       .unslider-arrow {
             display: block;
             width: 32px;
@@ -160,28 +169,29 @@
 
 
       /* Create two unequal columns that floats next to each other */
-      .home_column {
+      .column {
             float: left;
       }
 
       .left {
-            width: 75%;
+            width: 50%;
+            text-align: center;
       }
 
       .right {
-            float: center;
-            width: 25%;
+            float: left;
+            width: 50%;
       }
 
       /* Clear floats after the columns */
       .row:after {
-      content: "";
-      display: table;
-      clear: both;
+            content: "";
+            display: table;
+            clear: both;
       }
 
       @media (max-width: 600px) {
-    .column {
+      .column {
         width: 100%;
     }
 }
@@ -310,16 +320,14 @@
             <span>This area is the end of the navigation, if you are tabbing this should close out the extended nav</span>
          </a>
       </div>
-      <div id="PageBanner">	
-            <div class="my-slider">
-                  <ul>
-                        <!-- <li><img src='../stemcells/images/home_image1.jpg' /></li> -->
-                        <li><img src='http://bscr-csuf.intelijens.com/stemcells/images/home_image5.jpg' alt="Cell Closeup"/></li>
-                        <li><img src='http://bscr-csuf.intelijens.com/stemcells/images/home_image3.jpg' alt="Biology Lab Building"/></li>
-                        <li><img src='http://bscr-csuf.intelijens.com/stemcells/images/home_image2.jpg' alt="Lab Process"/></li>
-                  </ul>
-            </div>
+
+      
+      <div id="PageBanner">
+                  <div><img src="./contact_files/contact_image1.jpg" alt="contact banner"></div>
       </div>
+
+
+
       <div id="MainContent"
            role="main"
            onmouseover="Navigation_CloseExtendedMainNav()">
@@ -327,37 +335,189 @@
             <div id="centercontent" class="Show100Wide"><a name="skipnavigation" id="skipnavigation"></a><div id="layoutcontainer" class="T3_101">
                   <div id="divA" class="divA ">
                      <div id="divA_content" class=" hascontent">
-                        
-                        <div class="row">
-                              <div class="home_column left">
-                        <h1 style='margin-top:40px;'>Program</h1>
-                        <p>The Bridges to Stem Cell Research (BSCR) program trains Scholars in the basic stem cell biology techniques at CSU-Fullerton during a 7-month pre-internship (June - December). The Scholars then complete their 7-month paid internship in a lab of their choice at one of the collaborating institutions. You can find more information about the BSCR program through the <a href="http://bscr-csuf.intelijens.com/stemcells/program">"Program" link</a>.</p>
-
-                        <h1 style='margin-top:40px;'>Requirements</h1>
-                        <p>Biology students must be enrolled in (or have completed) BIOL 302 and either BIOL 303 or BIOL 309. Biochemistry students must be enrolled in (or have completed) CHEM 421 or CHEM 423. Successful candidates are likely to have a good GPA, be highly recommended by their instructors, and have demonstrable interest in stem cell biology. Prior research experience is not required to be accepted into this program.</p>
-
-                        <h3 style='text-transform:uppercase;color:#47ab10; text-align:left; margin-top:40px;'>Goal: To prepare ten undergraduate Stem Cell Scholars through hands-on research experience and a selected set of courses.</h3>
-                        
-                        <p style='text-align:center;'>
-                        <a href='http://bscr-csuf.intelijens.com/stemcells/application'>
-                              <img src ='http://bscr-csuf.intelijens.com/stemcells/images/apply.jpg'alt="Apply Icon"/>
-                        </a>
-                        </p>
-                        </div>
-                        <div class="home_column right">
-                              <h3 style='text-align:center;'>Symposium</h3>
-                              <center><a href="http://bscr-csuf.intelijens.com/stemcells/symposium"><img src ='http://www.msi.harvard.edu/images/sym07.jpg'style='width:50%' alt="Symposium Banner"/></a></center>
-                              </br>
-                              <h3 style='text-align:center;'>Media</h3>
-                              <center><a href="http://bscr-csuf.intelijens.com/stemcells/media"><img src ='http://www.cirm.ca.gov/sites/default/files/logo-cirm-2_0.png'style='width:50%'alt="Media Banner"/></a></center>
-                        </div>
+                      
+                              <div>
+                                    <br><br>
+                                          <h2 style="text-align: center; color: #002e5b">CIRM funded - Bridges to Stem Cell Research (BSCR) Program</h2><br><br>
+                                          <div class="row">
+                                                <div class="column left" >
+                                                      <p><img src="./contact_files/o3g2e7-b88631153z.120160302194229000gmdeoaeb.10.jpg?w=408" alt="Nilay Patel profile"></p>
+                                                </div>
+                                          
+                                                <div class="column right">
+                                                      <table > 
+                                                      <tbody>
+                                                            <tr><td colspan="2" style="background: none"><h3><b style="color: #002e5b">Dr. Nilay V. Patel</b></h3></td></tr>
+                                                            <tr><td colspan="2" style="background: none"><h4>Program Director<p></p></h4></td></tr>
+                                                            
+                                                            <tr><td style="background: none">Direct Email: </td><td><a href="mailto:npatel@fullerton.edu">npatel@fullerton.edu</a></td></tr>
+                                                            <tr><td style="background: none">Staff Email: </td><td><a href="mailto:stemcell@fullerton.edu">stemcell@fullerton.edu</a></td></tr>
+                                                            <tr><td style="background: none">Phone: </td><td>657.278.2483</td></tr>
+                                                            <tr><td style="background: none">Website:</td><td><a href="http://biology.fullerton.edu/stemcells/" target="_blank">www.Biology.Fullerton.edu/StemCells</a></td></tr>
+                                                      </tbody>
+                                                      </table>
+                                                </div>
+                                          </div>
+                                          <div class="row">
+                                                      <div class="column left" >
+                                                            <p><img src="https://www.ocregister.com/wp-content/uploads/migration/o3g/o3g2e9-b88631153z.120160302194229000gmdeoae9.10.jpg?w=408" alt="Alison Miyamoto profile"></p>
+                                                      </div>
+                                                
+                                                      <div class="column right">
+                                                            <table > 
+                                                            <tbody>
+                                                                  <tr><td colspan="2" style="background: none"><h3><b style="color: #002e5b">Dr. Alison Miyamoto</b></h3></td></tr>
+                                                                  <tr><td colspan="2" style="background: none"><h4>Associate Professor<p></p></h4></td></tr>
+                                                                  <tr><td style="background: none">Direct Email: </td><td><a href="mailto:almiyamoto@fullerton.edu">almiyamoto@fullerton.edu</a></td></tr>
+                                                                  <tr><td style="background: none">Phone: </td><td>657-278-2540</td></tr>
+                                                            </tbody>
+                                                            </table>
+                                                      </div>
+                                                </div>
+                                                <div class="row">
+                                                            <div class="column left" >
+                                                                  <p><img src="https://www.ocregister.com/wp-content/uploads/migration/o3g/o3g2e7-b88631153z.120160302194229000gmdeoaed.10.jpg?w=408" alt="Nima Maleky profile"></p>
+                                                            </div>
+                                                      
+                                                            <div class="column right">
+                                                                  <table > 
+                                                                  <tbody>
+                                                                        <tr><td colspan="2" style="background: none"><h3><b style="color: #002e5b">Nima Maleky</b></h3></td></tr>
+                                                                        <tr><td colspan="2" style="background: none"><h4>Program Coordinator<p></p></h4></td></tr>
+                                                                        <tr><td style="background: none">Direct Email: </td><td><a href="mailto:stemcell@fullerton.edu">stemcell@fullerton.edu</a></td></tr>
+                                                                  </tbody>
+                                                                  </table>
+                                                            </div>
+                                                      </div>      
 
                   </div>
-             
+
+                  </div>
+                  </div>
+                  <div id="divB" class="divB ">
+                     <div id="divB_content" class=" emptycontent">
                         
                      </div>
                   </div>
-                  
+                  <div id="divC" class="divC ">
+                     <div id="divC_content" class=" emptycontent">
+                        
+                     </div>
+                  </div>
+                  <div id="divD" class="divD ">
+                     <div id="divD_content" class=" emptycontent">
+                        
+                     </div>
+                  </div>
+                  <div id="divE" class="divE ">
+                     <div id="divE_content" class=" emptycontent">
+                        
+                     </div>
+                  </div>
+                  <div id="divF" class="divF ">
+                     <div id="divF_content" class=" emptycontent">
+                        
+                     </div>
+                  </div>
+                  <div id="divG" class="divG ">
+                     <div id="divG_content" class=" emptycontent">
+                        
+                     </div>
+                  </div>
+                  <div id="divH" class="divH ">
+                     <div id="divH_content" class=" emptycontent">
+                        
+                     </div>
+                  </div>
+                  <div id="divI" class="divI ">
+                     <div id="divI_content" class=" emptycontent">
+                        
+                     </div>
+                  </div>
+                  <div id="divJ" class="divJ ">
+                     <div id="divJ_content" class=" emptycontent">
+                        
+                     </div>
+                  </div>
+                  <div id="divK" class="divK ">
+                     <div id="divK_content" class=" emptycontent">
+                        
+                     </div>
+                  </div>
+                  <div id="divL" class="divL ">
+                     <div id="divL_content" class=" emptycontent">
+                        
+                     </div>
+                  </div>
+                  <div id="divM" class="divM ">
+                     <div id="divM_content" class=" emptycontent">
+                        
+                     </div>
+                  </div>
+                  <div id="divN" class="divN ">
+                     <div id="divN_content" class=" emptycontent">
+                        
+                     </div>
+                  </div>
+                  <div id="divO" class="divO ">
+                     <div id="divO_content" class=" emptycontent">
+                        
+                     </div>
+                  </div>
+                  <div id="divP" class="divP ">
+                     <div id="divP_content" class=" emptycontent">
+                        
+                     </div>
+                  </div>
+                  <div id="divQ" class="divQ ">
+                     <div id="divQ_content" class=" emptycontent">
+                        
+                     </div>
+                  </div>
+                  <div id="divR" class="divR ">
+                     <div id="divR_content" class=" emptycontent">
+                        
+                     </div>
+                  </div>
+                  <div id="divS" class="divS ">
+                     <div id="divS_content" class=" emptycontent">
+                        
+                     </div>
+                  </div>
+                  <div id="divT" class="divT ">
+                     <div id="divT_content" class=" emptycontent">
+                        
+                     </div>
+                  </div>
+                  <div id="divU" class="divU ">
+                     <div id="divU_content" class=" emptycontent">
+                        
+                     </div>
+                  </div>
+                  <div id="divV" class="divV ">
+                     <div id="divV_content" class=" emptycontent">
+                        
+                     </div>
+                  </div>
+                  <div id="divW" class="divW ">
+                     <div id="divW_content" class=" emptycontent">
+                        
+                     </div>
+                  </div>
+                  <div id="divX" class="divX ">
+                     <div id="divX_content" class=" emptycontent">
+                        
+                     </div>
+                  </div>
+                  <div id="divY" class="divY ">
+                     <div id="divY_content" class=" emptycontent">
+                        
+                     </div>
+                  </div>
+                  <div id="divZ" class="divZ ">
+                     <div id="divZ_content" class=" emptycontent">
+                        
+                     </div>
                   </div>
                </div>
             </div>

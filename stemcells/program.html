@@ -80,37 +80,33 @@
             href="https://www.fullerton.edu/marc/_resources/images/icons/favicon/favicon_32.png"/>
 
       <style>
-                  /*BUI'S*/
+      .content {
+            position: relative;
+            max-width: 1000px;
+            margin: auto;
+            background: url('../images/bg_daf3f3.jpg');
+            padding: 20px;
+      }    
 
-                  .content {
-                        position: relative;
-                        max-width: 1000px;
-                        margin: auto;
-                        background: #fff;
-                        padding: 20px;
-                  }
-            
-                  .my-slider {
-                        text-align: center;
-                  }
-                  .my-slider img{width:100%;}
-                  .content_part {
-                        background: url('images/bg_daf3f3.jpg');
-                        margin: 20px 0px;
-                        padding: 1px;
-                  }
-            
-                  .content_part_left {
-                        background: url('images/bg_daf3f3.jpg');
-                        margin: 20px 20px 20px 0px;
-                        padding: 1px;
-                  }
-            
-                  .content_part_right {
-                        background: url('images/bg_daf3f3.jpg');
-                        margin: 20px 0px 20px 20px;
-                        padding: 1px;
-                  }            
+      .application_dl {
+            display: inline-block;
+            width: 300px;
+            padding: 5px;
+            background: #1854b8;
+            color: #fff;
+      }
+
+      *{margin:0;}
+      body {line-height: 1;}
+      h1 {
+      text-align: center;
+      margin: 20px 0px;
+      color: #002e5b
+      }
+      h2{text-align: center;color:#002e5b}
+      h3{color:#1854b8; margin: 30px 0 15px 0; font-size: 1.75em;}
+      h4{color:#00b050; margin: 15px 0 15px 15px; font-size: 1.25em;}
+      h4.special{color:#7e3c99; margin: 15px 0 15px 20px; font-size: 1em; clear:left;}
       </style>
 
       <script async src="gtag/js.js?id=UA-XXX-YYY" >//google analytics;
@@ -126,7 +122,7 @@
 </script><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">//loading jquery from google CDN
 </script><link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" /><link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css" /><script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js">//loading jquery ui from google CDN
 </script><script type="text/javascript" src="https://www.fullerton.edu/marc/_resources/js_standard/parallax.js" >//parallax code base;
-</script><script type="text/javascript" src="https://www.fullerton.edu/marc/_resources/js_standard/page_features.js" >//standard page features;
+</script><script type="text/javascript" src="./_resources/js_standard/page_features.js" >//standard page features;
 </script><script type="text/javascript" src="https://www.fullerton.edu/marc/_resources/js_site/_ExtraJSFiles.js" >//site import js files;
 </script>
 <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js'></script>
@@ -135,6 +131,17 @@
 <link rel="stylesheet" href="js/unslider-dots.css">
 
 <style>
+
+    
+      * {
+            box-sizing: border-box;
+      }
+      
+      table, th, td {
+            border: 0;
+            padding: 0;
+      }
+
       .unslider-arrow {
             display: block;
             width: 32px;
@@ -160,28 +167,29 @@
 
 
       /* Create two unequal columns that floats next to each other */
-      .home_column {
+      .column {
             float: left;
       }
 
       .left {
-            width: 75%;
+            width: 50%;
+            text-align: center;
       }
 
       .right {
-            float: center;
-            width: 25%;
+            float: left;
+            width: 50%;
       }
 
       /* Clear floats after the columns */
       .row:after {
-      content: "";
-      display: table;
-      clear: both;
+            content: "";
+            display: table;
+            clear: both;
       }
 
       @media (max-width: 600px) {
-    .column {
+      .column {
         width: 100%;
     }
 }
@@ -310,16 +318,14 @@
             <span>This area is the end of the navigation, if you are tabbing this should close out the extended nav</span>
          </a>
       </div>
-      <div id="PageBanner">	
-            <div class="my-slider">
-                  <ul>
-                        <!-- <li><img src='../stemcells/images/home_image1.jpg' /></li> -->
-                        <li><img src='http://bscr-csuf.intelijens.com/stemcells/images/home_image5.jpg' alt="Cell Closeup"/></li>
-                        <li><img src='http://bscr-csuf.intelijens.com/stemcells/images/home_image3.jpg' alt="Biology Lab Building"/></li>
-                        <li><img src='http://bscr-csuf.intelijens.com/stemcells/images/home_image2.jpg' alt="Lab Process"/></li>
-                  </ul>
-            </div>
+
+      
+      <div id="PageBanner">
+                  <div><img src="./program_old_files/program_image1.jpg" alt="Program banner"></div>
       </div>
+
+
+
       <div id="MainContent"
            role="main"
            onmouseover="Navigation_CloseExtendedMainNav()">
@@ -327,37 +333,133 @@
             <div id="centercontent" class="Show100Wide"><a name="skipnavigation" id="skipnavigation"></a><div id="layoutcontainer" class="T3_101">
                   <div id="divA" class="divA ">
                      <div id="divA_content" class=" hascontent">
-                        
-                        <div class="row">
-                              <div class="home_column left">
-                        <h1 style='margin-top:40px;'>Program</h1>
-                        <p>The Bridges to Stem Cell Research (BSCR) program trains Scholars in the basic stem cell biology techniques at CSU-Fullerton during a 7-month pre-internship (June - December). The Scholars then complete their 7-month paid internship in a lab of their choice at one of the collaborating institutions. You can find more information about the BSCR program through the <a href="http://bscr-csuf.intelijens.com/stemcells/program">"Program" link</a>.</p>
-
-                        <h1 style='margin-top:40px;'>Requirements</h1>
-                        <p>Biology students must be enrolled in (or have completed) BIOL 302 and either BIOL 303 or BIOL 309. Biochemistry students must be enrolled in (or have completed) CHEM 421 or CHEM 423. Successful candidates are likely to have a good GPA, be highly recommended by their instructors, and have demonstrable interest in stem cell biology. Prior research experience is not required to be accepted into this program.</p>
-
-                        <h3 style='text-transform:uppercase;color:#47ab10; text-align:left; margin-top:40px;'>Goal: To prepare ten undergraduate Stem Cell Scholars through hands-on research experience and a selected set of courses.</h3>
-                        
-                        <p style='text-align:center;'>
-                        <a href='http://bscr-csuf.intelijens.com/stemcells/application'>
-                              <img src ='http://bscr-csuf.intelijens.com/stemcells/images/apply.jpg'alt="Apply Icon"/>
-                        </a>
-                        </p>
-                        </div>
-                        <div class="home_column right">
-                              <h3 style='text-align:center;'>Symposium</h3>
-                              <center><a href="http://bscr-csuf.intelijens.com/stemcells/symposium"><img src ='http://www.msi.harvard.edu/images/sym07.jpg'style='width:50%' alt="Symposium Banner"/></a></center>
-                              </br>
-                              <h3 style='text-align:center;'>Media</h3>
-                              <center><a href="http://bscr-csuf.intelijens.com/stemcells/media"><img src ='http://www.cirm.ca.gov/sites/default/files/logo-cirm-2_0.png'style='width:50%'alt="Media Banner"/></a></center>
-                        </div>
+                      
+                              <div class="content">
+                                          <h2 style="text-align: center; color: #002e5b">CIRM funded - Bridges to Stem Cell Research (BSCR) Program</h2><br><br>
+                                          <br><br>
+                                          <h4></h4>
+                                          <img src="./program_old_files/stem_cell_rhusman_200.jpg" alt="program pic" style="float:right;">
+                                          <h3>What are stem cells (SC)?</h3>
+                                          <ul>
+                                              <li>SC are similar to cells present in the embryo during the first 3 - 7 days after fertilization.</li>
+                                              <li>They are undifferentiated and have the potential to differentiate into any cell type (pluripotent)</li>
+                                              <li>They can remain pluripotent indefinitely</li>
+                                              <li>Thus, SC research is considered to be the most promising new technology for regenerative medicine and/or customized medicine</li>
+                                              <li>There are various types of SC, and induced pluripotent SC (iPSC) are thought to be the future of translational/biomedical research.</li>
+                                          </ul>
+                          
+                          
+                          
+                                          <h3>CIRM's Goals</h3>
+                                          <ul>
+                                              <li>CIRM: California Institute for Regenerative Medicine</li>
+                                              <li>CIRM wants students to enter the field of stem cell research because...</li>
+                                              <li>...it is the next frontier in biotech</li>
+                                              <li>...stem cell research is booming in California, and</li>
+                                              <li>...there is lack of personnel with stem cell training</li>
+                                              <li>They are hoping for students to enter the work-force at all levels: technicians, PhD, MD, DDS, MBA, etc.
+                                              </li>
+                                          </ul>
+                          
+                                          <h3>BSCR Program: Goals</h3>
+                                          <h4>Prepare students for an intensive, full-time stem
+                                                cell research internship through:</h4>
+                                          <ol>
+                                              <li>Stem cell-related course-work (Summer &amp; Fall semesters)
+                                              </li>
+                                              <li>"Independent Research" (BIOL 499L) in a selected CSUF lab</li>
+                                              <li>Improved communication, presentation, goal-setting, and strategic planning skills (BIOL 480C)</li>
+                                              <li>Patient engagement activities &amp; community outreach</li>
+                                              <li>Full-time, paid internship for seven months (Jan-July, 2017)
+                                              </li>
+                                          </ol>
+                          
+                          
+                                          <h4 class="special">Internship Host sites: UCI, USC, CHOC &amp; Stanford</h4>
+                                          <img src="./program_old_files/db_hall.jpg" alt="program pic" style="float:right;">
+                                          <h3>BSCR Program: Academic Benefits</h3>
+                                          <ul>
+                                              <li>Expertise in Stem Cell Research</li>
+                                              <li>Academic advancement and scholarly gains</li>
+                                              <li>Possibility of additional/stronger recommendation</li>
+                                              letters for the BSCR Scholar (intern)
+                                              <li>Courses apply to your B.S. in Biology (C&amp;D, MBB)</li>
+                                          </ul>
+                          
+                                          <h3>BSCR Program: Financial Support</h3>
+                                          <h4>The Scholars get:</h4>
+                                          <ul>
+                                              <li>tuition reimbursement of $3,100 for spring 2017 semester;
+                                              </li>
+                                              <li>stipends of $2,575/month during internship (from January 2017 to July 2017), $18,025 total.</li>
+                                          </ul>
+                                          <h4 class="special">These benefits may impact your Financial Aid.</h4>
+                                          <b>The students are required to support themselves
+                          during summer 2016 and fall 2016 semesters.</b><br>
+                                          <b>The students have to pay for:</b>
+                                          <ul>
+                                              <li>the summer course (BIOL 329);</li>
+                                              <li>full-time enrollment during fall 2016 semester.</li>
+                                          </ul>
+                          
+                                          <h3>BSCR Program: Timeline</h3>
+                                          <ul>
+                                              <li>03/18/2016 - 6th annual Stem Cell Symposium</li>
+                                              <li>04/11/2016 - applications due; up to 10 applicants selected</li>
+                                              <li>04/18/2016 to 04/29/2016 - interviews</li>
+                                              <li>05/01/2016 - BSCR Scholars announced</li>
+                                              <li>05/31/2016 to 07/01/2016 - Essential Techniques in Cell Biology (BIOL 329)</li>
+                                              <li>Summer 2016 - Full-time research at CSUF (volunteer)</li>
+                                              <li>Fall 2016 semester - SC-related courses (on the next page)</li>
+                                              <li>01/03/2016 to 07/28/2016 - Full-time internship (stipend)</li>
+                                          </ul>
+                                          <img src="./program_old_files/STEM-Patel-Samson-300.jpg" alt="program pic" style="float:left; margin:30px 40px 30px 0;">
+                                          <h3>BSCR Program: Coursework</h3>
+                                          <div style="float:left; clear:right;">
+                                          <h4>Summer 2016 semester:</h4>
+                                          <ul>
+                                              <li>BIOL329 - Essential Techniques in Cell Biology</li>
+                                              <li>Full-time research in a CSUF lab (volunteer)</li>
+                                              <li>Workshops (3): Ethics, FDA &amp; Regulatory Affairs, Leadership</li>
+                                          </ul>
+                                          <h4>Fall 2016 semester:</h4>
+                                          <ul>
+                                              <li>BIOL 427 - Stem Cell Biology (Lecture)</li>
+                                              <li>BIOL 429 - Techniques in Stem Cell Biology (Lab)</li>
+                                              <li>BIOL 480C - Profession Seminar (internship prep.)</li>
+                                              <li>BIOL 499L - Independent Research</li>
+                                          </ul>
+                                        </div>
+                          
+                                          <h4 class="special">Spring 2017 semester: full-time enrollment in internshiprelated
+                          courses (BIOL 299L, BIOL 480, BIOL 495, BIOL 499L)</h4>
+                          
+                                          <h3>BSCR Program: Applications</h3>
+                                          <h4>Successful students will have:</h4>
+                                          <ul>
+                                              <li>Good GPA (greater than 3.0)</li>
+                                              <li>Completed BIOL 302, and BIOL 303 or BIOL 309</li>
+                                              <li><b>or</b> Completed CHEM 421 or 423 (BioChem Majors)</li>
+                                              <li>Demonstrable interest in stem cell research</li>
+                                              <li>Prior research experience is not needed!</li>
+                                              <li>Integration of stem cell research into your career goals is desired; PhD as a career goal is not a requirement.</li>
+                                          </ul>
+                          
+                                          <p style="text-align:center;"><br><br>
+                                              <a class="application_dl" href="http://bscr-csuf.intelijens.com/application/"><font color="white">DOWNLOAD APPLICATION</font></a><br><br>
+                          
+                                              <a href="http://biology.fullerton.edu/stemcells/" target="_blank">
+                                                www.Biology.Fullerton.edu/StemCells</a><br> Dr. Nilay V. Patel<br>
+                                              <a href="mailto:npatel@fullerton.edu">npatel@fullerton.edu</a><br>
+                                              <a href="mailto:stemcell@fullerton.edu">stemcell@fullerton.edu</a><br> 657.278.2483
+                                          </p>
+                          
+                          
+                                  </div><!--content-->
 
                   </div>
-             
-                        
+                  </div>                        
                      </div>
-                  </div>
-                  
                   </div>
                </div>
             </div>

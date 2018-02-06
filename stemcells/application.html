@@ -169,34 +169,13 @@
             transform: rotate(-180deg);
       }
 
-
-      /* Create two unequal columns that floats next to each other */
-      .column {
-            float: left;
+      .application_dl {
+            display: inline-block;
+            width: auto;
+            padding: 5px;
+            background: #003366;
+            color: #fff;
       }
-
-      .left {
-            width: 50%;
-            text-align: center;
-      }
-
-      .right {
-            float: left;
-            width: 50%;
-      }
-
-      /* Clear floats after the columns */
-      .row:after {
-            content: "";
-            display: table;
-            clear: both;
-      }
-
-      @media (max-width: 600px) {
-      .column {
-        width: 100%;
-    }
-}
 </style>
 
 <script>
@@ -281,7 +260,7 @@
          <div class="container">
             <div id="branding">
                   <p id="unit"><a href="https://nsm.fullerton.edu/" target="_blank">College of Natural Sciences and Mathematics</a>> <a href="https://nsm.fullerton.edu/" target="_blank">Biological Science</a></p>
-                  <p id="sitename"><a href="http://bscr-csuf.intelijens.com/stemcells/"  onclick="return UnderstandUsage('http://bscr-csuf.intelijens.com/stemcells/', 'Bridges To Stem Cell Research (BSCR)', 'site name link', 'click'); "  >Bridges To Stem Cell Research (BSCR)</a></p>
+                  <p id="sitename"><a href="./index.html"  onclick="return UnderstandUsage('./index.html', 'Bridges To Stem Cell Research (BSCR)', 'site name link', 'click'); "  >Bridges To Stem Cell Research (BSCR)</a></p>
             </div>
          </div>
       </div>
@@ -336,13 +315,12 @@
             <div id="centercontent" class="Show100Wide"><a name="skipnavigation" id="skipnavigation"></a><div id="layoutcontainer" class="T3_101">
                   <div id="divA" class="divA ">
                      <div id="divA_content" class=" hascontent">
-                             <h2 style="text-align: center; color: #002e5b">Application</h2><br><br>
-                             <div style="text-align: center">
-                             <a href='http://bscr-csuf.intelijens.com/stemcells/pdfs/BSCRapplication.pdf' download>
-                              <img src ='http://bscr-csuf.intelijens.com/stemcells/images/apply.jpg'alt="Apply Icon"/></a>
+                        <h2 style="text-align: center; color: #002e5b">Application</h2><br><br>
+                              <div style="text-align: center">
+                                    <a href='./pdfs/BSCRapplication.pdf' download>
+                                          <img src ='./images/apply.jpg'alt="Apply Icon"/></a>
+                                    </div>
                               </div>
-                  </div>
-
                   </div>
                   </div>                        
                      </div>
